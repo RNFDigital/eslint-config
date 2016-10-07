@@ -1,0 +1,47 @@
+{
+  "name": "@rnfdigital/eslint-config",
+  "description": "RNF Digital ESLint configuration",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RNFDigital/eslint-config.git"
+  },
+  "keywords": [
+    "eslint"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RNFDigital/eslint-config/issues"
+  },
+  "homepage": "https://github.com/RNFDigital/eslint-config#readme",
+  "main": "eslint.js",
+  "files": [
+    "eslint.js",
+    "node.js",
+    "react-dom.js",
+    "react-native.js",
+    "react.js"
+  ],
+  "scripts": {
+    "lint": "eslint './**/*.js'"
+  },
+  "devDependencies": {
+    "babel-eslint": "7.0.0",
+    "eslint": "3.7.1",
+    "eslint-plugin-flowtype": "2.20.0",
+    "eslint-plugin-import": "2.0.0",
+    "eslint-plugin-promise": "2.0.1",
+    "eslint-plugin-react": "6.3.0",
+    "eslint-plugin-react-native": "2.0.0"
+  },
+  "peerDependencies": {
+    "babel-eslint": "7.0.0",
+    "eslint": "3.7.1",
+    "eslint-plugin-flowtype": "2.20.0",
+    "eslint-plugin-import": "2.0.0",
+    "eslint-plugin-promise": "2.0.1",
+    "eslint-plugin-react": "6.3.0",
+    "eslint-plugin-react-native": "2.0.0"
+  }
+}
