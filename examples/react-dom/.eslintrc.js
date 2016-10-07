@@ -2,5 +2,5 @@
 /* eslint-env commonjs */
 
 module.exports = {
-    extends: ["../../react-dom.js"],
+    'extends': ['../../react-dom.js'],
 }

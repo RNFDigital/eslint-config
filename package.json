@@ -1,7 +1,7 @@
 {
   "name": "@rnfdigital/eslint-config",
   "description": "RNF Digital ESLint configuration",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RNFDigital/eslint-config.git"
@@ -24,7 +24,7 @@
     "react.js"
   ],
   "scripts": {
-    "lint": "eslint './**/*.js'"
+    "lint": "eslint --ignore-pattern '!.eslintrc.js' ."
   },
   "devDependencies": {
     "babel-eslint": "7.0.0",

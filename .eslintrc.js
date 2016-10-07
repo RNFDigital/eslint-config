@@ -3,5 +3,5 @@
 
 module.exports = {
     root: true,
-    extends: ["./eslint.js"],
+    'extends': ['./eslint.js'],
 }
