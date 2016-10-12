@@ -1,10 +1,10 @@
 language: node_js
 node_js:
   - "node"
+before_install:
+  - time npm i -g yarn --cache-min 999999999
 install:
-  - npm -g install yarn
-  - yarn
+  - time yarn
 cache:
   directories:
-    - ~/.yarn
-    - ~/.nvm
+    - $HOME/.yarn-cache
