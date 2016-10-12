@@ -7,4 +7,5 @@ install:
   - time yarn
 cache:
   directories:
+    - $HOME/.npm
     - $HOME/.yarn-cache
