@@ -27,3 +27,12 @@ module.exports = {
 | react        | @rnfdigital/eslint-config/react        |
 | react-dom    | @rnfdigital/eslint-config/react-dom    |
 | react-native | @rnfdigital/eslint-config/react-native |
+
+## Plugins
+
+- https://github.com/mysticatea/eslint-plugin-eslint-comments
+- https://github.com/gajus/eslint-plugin-flowtype
+- https://github.com/benmosher/eslint-plugin-import
+- https://github.com/xjamundx/eslint-plugin-promise
+- https://github.com/yannickcr/eslint-plugin-react
+- https://github.com/intellicode/eslint-plugin-react-native
