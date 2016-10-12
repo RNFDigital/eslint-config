@@ -24,7 +24,7 @@
     "react.js"
   ],
   "scripts": {
-    "lint": "eslint --ignore-pattern '!.eslintrc.js' ."
+    "test": "eslint --ignore-pattern '!.eslintrc.js' ."
   },
   "devDependencies": {
     "babel-eslint": "7.0.0",
