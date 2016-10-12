@@ -29,6 +29,7 @@
   "devDependencies": {
     "babel-eslint": "7.0.0",
     "eslint": "3.7.1",
+    "eslint-plugin-eslint-comments": "0.1.1",
     "eslint-plugin-flowtype": "2.20.0",
     "eslint-plugin-import": "2.0.0",
     "eslint-plugin-promise": "2.0.1",
@@ -38,6 +39,7 @@
   "peerDependencies": {
     "babel-eslint": "7.0.0",
     "eslint": "3.7.1",
+    "eslint-plugin-eslint-comments": "0.1.1",
     "eslint-plugin-flowtype": "2.20.0",
     "eslint-plugin-import": "2.0.0",
     "eslint-plugin-promise": "2.0.1",

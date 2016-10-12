@@ -42,6 +42,7 @@ module.exports = {
         'flowtype',
         'import',
         'promise',
+        'eslint-comments',
     ],
     settings: {
         'import/ignore': [
@@ -378,5 +379,13 @@ module.exports = {
         'flowtype/union-intersection-spacing': ['error', 'always'],
         'flowtype/use-flow-type': 'error',
         'flowtype/valid-syntax': 'error',
+
+        // eslint comments
+        'eslint-comments/disable-enable-pair': 'error',
+        'eslint-comments/no-duplicate-disable': 'error',
+        'eslint-comments/no-unlimited-disable': 'error',
+        'eslint-comments/no-unused-disable': 'error',
+        'eslint-comments/no-unused-enable': 'error',
+        'eslint-comments/no-use': 'off',
     },
 }
