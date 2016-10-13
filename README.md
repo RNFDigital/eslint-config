@@ -1,4 +1,7 @@
 # eslint-config
+[![Travis](https://img.shields.io/travis/RNFDigital/eslint-config.svg?maxAge=3600)](https://travis-ci.org/RNFDigital/eslint-config)
+[![npm](https://img.shields.io/npm/v/@rnfdigital/eslint-config.svg?maxAge=3600)](https://www.npmjs.com/package/@rnfdigital/eslint-config)
+
 RNF Digital ESLint configuration
 
 ## Install
