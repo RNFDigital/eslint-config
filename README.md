@@ -14,19 +14,14 @@ npm install --save-dev @rnfdigital/eslint-config
 // .eslintrc.js
 module.exports = {
     'root': true,
-    'extends': '@rnfdigital/eslint-config',
+    // Pick a flavour
+    // 'extends': '@rnfdigital/eslint-config',
+    // 'extends': '@rnfdigital/eslint-config/node',
+    // 'extends': '@rnfdigital/eslint-config/react',
+    // 'extends': '@rnfdigital/eslint-config/react-dom',
+    // 'extends': '@rnfdigital/eslint-config/react-native',
 }
 ```
-
-## Flavours
-
-| Flavour      | Extends                                |
-|--------------|----------------------------------------|
-| vanilla      | @rnfdigital/eslint-config              |
-| node         | @rnfdigital/eslint-config/node         |
-| react        | @rnfdigital/eslint-config/react        |
-| react-dom    | @rnfdigital/eslint-config/react-dom    |
-| react-native | @rnfdigital/eslint-config/react-native |
 
 ## Plugins
 
