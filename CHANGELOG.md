@@ -5,10 +5,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [1.2.0] - 2016-10-15
 ### Added
 - React Native globals
 
-## [1.1.0] - 2016-12-03
+## [1.1.0] - 2016-10-12
 ### Added
 - eslint-plugin-eslint-comments
 - Setup Travis CI
