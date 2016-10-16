@@ -24,7 +24,8 @@
     "react.js"
   ],
   "scripts": {
-    "test": "eslint --ignore-pattern '!.eslintrc.js' ."
+    "test": "eslint --ignore-pattern '!.eslintrc.js' .",
+    "checkPeerDependencies": "node ./scripts/checkPeerDependencies.js"
   },
   "devDependencies": {
     "babel-eslint": "7.0.0",
