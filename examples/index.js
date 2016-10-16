@@ -1,14 +1,32 @@
 /* @flow */
+/* eslint-disable no-unused-vars */
 
-export const b = 1
-export const c = 2
+// Function spacing
 
 const add = (a: number, b: number): number => a + b
+const addAsync = async (a: number, b: number): Promise<number> => a + b
 
-const a = 1
+// Trailing commas
 
-add(a, 1)
+const array1 = [1, 2, 3]
+const array2 = [
+    1,
+    2,
+    3,
+    4,
+]
 
-const foo = async (): Promise<string> => 'foo'
+const obj1 = {a: 1, b: 2, c: 3}
+const obj2 = {
+    a: 1,
+    b: 2,
+    c: 3,
+}
 
-foo()
+add(1, 2)
+addAsync(
+    1,
+    2,
+)
+
+/* eslint-enable no-unused-vars */

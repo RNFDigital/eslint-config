@@ -24,11 +24,12 @@
     "react.js"
   ],
   "scripts": {
-    "test": "eslint --ignore-pattern '!.eslintrc.js' ."
+    "test": "eslint --ignore-pattern '!.eslintrc.js' .",
+    "checkPeerDependencies": "node ./scripts/checkPeerDependencies.js"
   },
   "devDependencies": {
     "babel-eslint": "7.0.0",
-    "eslint": "3.7.1",
+    "eslint": "3.8.0",
     "eslint-plugin-eslint-comments": "0.1.1",
     "eslint-plugin-flowtype": "2.20.0",
     "eslint-plugin-import": "2.0.0",
@@ -38,7 +39,7 @@
   },
   "peerDependencies": {
     "babel-eslint": "7.0.0",
-    "eslint": "3.7.1",
+    "eslint": "3.8.0",
     "eslint-plugin-eslint-comments": "0.1.1",
     "eslint-plugin-flowtype": "2.20.0",
     "eslint-plugin-import": "2.0.0",

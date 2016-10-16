@@ -5,6 +5,10 @@ before_install:
   - time npm i -g yarn --cache-min 999999999
 install:
   - time yarn
+test:
+  - yarn check
+  - npm run checkPeerDependencies
+  - npm test
 cache:
   directories:
     - $HOME/.npm
