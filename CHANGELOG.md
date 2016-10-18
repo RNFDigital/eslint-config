@@ -5,6 +5,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Changed
+- Upgrade plugins
+- Remove deprecated rules
+- Add new React rules
 
 ## [1.3.0] - 2016-10-16
 ### Added
