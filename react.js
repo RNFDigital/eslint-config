@@ -63,7 +63,7 @@ module.exports = {
         'react/jsx-max-props-per-line': ['error', {maximum: 1}],
         'react/jsx-no-bind': ['error', {
             ignoreRefs: true,
-            allowArrowFunctions: false,
+            allowArrowFunctions: true,
             allowBind: false,
         }],
         'react/jsx-no-comment-textnodes': 'error',
