@@ -4,7 +4,7 @@ node_js:
 before_install:
   - time npm i -g yarn --cache-min 999999999
 install:
-  - time yarn
+  - time yarn install --pure-lockfile
 test:
   - yarn check
   - npm run checkPeerDependencies

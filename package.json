@@ -1,7 +1,7 @@
 {
   "name": "@rnfdigital/eslint-config",
   "description": "RNF Digital ESLint configuration",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RNFDigital/eslint-config.git"
@@ -28,24 +28,24 @@
     "checkPeerDependencies": "node ./scripts/checkPeerDependencies.js"
   },
   "devDependencies": {
-    "babel-eslint": "7.0.0",
-    "eslint": "3.8.0",
-    "eslint-plugin-eslint-comments": "0.1.1",
-    "eslint-plugin-flowtype": "2.20.0",
-    "eslint-plugin-import": "2.0.1",
-    "eslint-plugin-promise": "3.0.0",
-    "eslint-plugin-react": "6.4.1",
-    "eslint-plugin-react-native": "2.0.0",
-    "react": "15.3.2"
+    "babel-eslint": "^7.0.0",
+    "eslint": "^3.8.0",
+    "eslint-plugin-eslint-comments": "^0.1.1",
+    "eslint-plugin-flowtype": "^2.20.0",
+    "eslint-plugin-import": "^2.0.1",
+    "eslint-plugin-promise": "^3.0.0",
+    "eslint-plugin-react": "^6.4.1",
+    "eslint-plugin-react-native": "^2.0.0",
+    "react": "^15.3.2"
   },
   "peerDependencies": {
-    "babel-eslint": "7.0.0",
-    "eslint": "3.8.0",
-    "eslint-plugin-eslint-comments": "0.1.1",
-    "eslint-plugin-flowtype": "2.20.0",
-    "eslint-plugin-import": "2.0.1",
-    "eslint-plugin-promise": "3.0.0",
-    "eslint-plugin-react": "6.4.1",
-    "eslint-plugin-react-native": "2.0.0"
+    "babel-eslint": "^7.0.0",
+    "eslint": "^3.8.0",
+    "eslint-plugin-eslint-comments": "^0.1.1",
+    "eslint-plugin-flowtype": "^2.20.0",
+    "eslint-plugin-import": "^2.0.1",
+    "eslint-plugin-promise": "^3.0.0",
+    "eslint-plugin-react": "^6.4.1",
+    "eslint-plugin-react-native": "^2.0.0"
   }
 }
