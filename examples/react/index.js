@@ -35,3 +35,7 @@ const a = ( // eslint-disable-line no-unused-vars
         {multiPropSelfClosing}
     </div>
 )
+
+const Hello = () => <span>Hello</span> // eslint-disable-line no-unused-vars
+
+const Hello2 = () => <span>Hello 2</span> // eslint-disable-line no-unused-vars

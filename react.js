@@ -26,7 +26,7 @@ module.exports = {
         'react/no-direct-mutation-state': 'error',
         'react/no-find-dom-node': 'error',
         'react/no-is-mounted': 'error',
-        'react/no-multi-comp': 'error',
+        'react/no-multi-comp': 'off',
         'react/no-render-return-value': 'error',
         'react/no-set-state': 'off',
         'react/no-string-refs': 'error',
