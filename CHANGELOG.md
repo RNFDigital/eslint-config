@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 ### Changed
 - Allow Arrow Functions in JSX
+- eslint-plugin-eslint-comments 1.0.0
 
 ## [1.5.0] - 2016-10-31
 ### Changed
