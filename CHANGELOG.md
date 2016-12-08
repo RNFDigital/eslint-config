@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [1.8.0] - 2016-12-08
+### Changed
+- Update dependencies
+
 ## [1.7.0] - 2016-11-01
 ### Changed
 - Turn off no-multi-comp
