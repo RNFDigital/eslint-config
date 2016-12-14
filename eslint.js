@@ -44,6 +44,7 @@ module.exports = {
         'promise',
         'eslint-comments',
         'babel',
+        'moment-utc',
     ],
     settings: {
         'import/ignore': [
@@ -399,5 +400,8 @@ module.exports = {
         // eslint babel
         'babel/no-invalid-this': 'error',
         'babel/no-await-in-loop': 'error',
+
+        // eslint moment utc
+        'moment-utc/no-moment-without-utc': 'error',
     },
 }

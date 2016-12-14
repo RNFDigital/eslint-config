@@ -1,6 +1,10 @@
 /* @flow */
 /* eslint-disable no-unused-vars */
 
+// Imports
+
+import moment from 'moment'
+
 // Function spacing
 
 const add = (a: number, b: number): number => a + b
@@ -37,5 +41,9 @@ class Hello {
         this.bar = 1
     }
 }
+
+// Moment
+
+moment.utc()
 
 /* eslint-enable no-unused-vars */
