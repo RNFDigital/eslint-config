@@ -31,4 +31,5 @@ module.exports = {
 - https://github.com/xjamundx/eslint-plugin-promise
 - https://github.com/yannickcr/eslint-plugin-react
 - https://github.com/intellicode/eslint-plugin-react-native
+- https://github.com/babel/babel-eslint
 - https://github.com/wunderflats/eslint-plugin-moment-utc
