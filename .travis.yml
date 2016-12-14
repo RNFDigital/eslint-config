@@ -3,8 +3,8 @@ node_js:
 - node
 test:
 - yarn check
-- npm run checkPeerDependencies
-- npm test
+- yarn checkPeerDependencies
+- yarn test
 cache: yarn
 deploy:
   provider: npm
