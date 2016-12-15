@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [1.9.0] - 2016-12-15
+### Added
+- eslint-plugin-babel
+- eslint-plugin-moment-utc
+
 ## [1.8.0] - 2016-12-08
 ### Changed
 - Update dependencies
