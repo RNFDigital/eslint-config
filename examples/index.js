@@ -29,4 +29,13 @@ addAsync(
     2,
 )
 
+// Classes
+
+class Hello {
+    static foo = () => 1
+    bar = () => {
+        this.bar = 1
+    }
+}
+
 /* eslint-enable no-unused-vars */

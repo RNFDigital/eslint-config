@@ -43,6 +43,7 @@ module.exports = {
         'import',
         'promise',
         'eslint-comments',
+        'babel',
     ],
     settings: {
         'import/ignore': [
@@ -118,7 +119,7 @@ module.exports = {
         'no-floating-decimal': 'error',
         'no-implicit-coercion': 'error',
         'no-implied-eval': 'error',
-        'no-invalid-this': 'error',
+        'no-invalid-this': 'off', // covered by babel/no-invalid-this
         'no-iterator': 'error',
         'no-labels': ['error', {
             allowLoop: true,
@@ -394,5 +395,9 @@ module.exports = {
         'eslint-comments/no-unused-disable': 'error',
         'eslint-comments/no-unused-enable': 'error',
         'eslint-comments/no-use': 'off',
+
+        // eslint babel
+        'babel/no-invalid-this': 'error',
+        'babel/no-await-in-loop': 'error',
     },
 }
