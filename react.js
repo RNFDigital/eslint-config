@@ -56,7 +56,9 @@ module.exports = {
             extensions: ['.js'],
         }],
         'react/jsx-first-prop-new-line': ['error', 'multiline'],
-        'react/jsx-handler-names': 'off',
+        'react/jsx-handler-names': ['error', {
+            eventHandlerPrefix: 'on',
+        }],
         'react/jsx-indent': ['error', 4],
         'react/jsx-indent-props': ['error', 4],
         'react/jsx-key': 'error',

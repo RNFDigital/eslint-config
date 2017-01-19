@@ -1,6 +1,6 @@
 /* @flow */
 
-import React from 'react'
+import React, {PropTypes} from 'react'
 
 const selfClosing = <div />
 const multiLine = (
@@ -39,3 +39,13 @@ const a = ( // eslint-disable-line no-unused-vars
 const Hello = () => <span>Hello</span> // eslint-disable-line no-unused-vars
 
 const Hello2 = () => <span>Hello 2</span> // eslint-disable-line no-unused-vars
+
+const onAsHandlePrefix = (props) => (
+    <input
+        onChange={props.onChange}
+    />
+)
+
+onAsHandlePrefix.propTypes = {
+    onChange: PropTypes.func,
+}
