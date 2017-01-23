@@ -40,12 +40,12 @@ const Hello = () => <span>Hello</span> // eslint-disable-line no-unused-vars
 
 const Hello2 = () => <span>Hello 2</span> // eslint-disable-line no-unused-vars
 
-const onAsHandlePrefix = (props) => (
+const OnAsHandlePrefix = (props) => (
     <input
         onChange={props.onChange}
     />
 )
 
-onAsHandlePrefix.propTypes = {
+OnAsHandlePrefix.propTypes = {
     onChange: PropTypes.func,
 }
