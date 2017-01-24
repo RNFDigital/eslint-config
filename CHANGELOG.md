@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+# [1.10.0] - 2016-01-19
+## Changed
+- Event handler prefix changed from 'handle' to 'on'
+
 ## [1.9.0] - 2016-12-15
 ### Added
 - eslint-plugin-babel
