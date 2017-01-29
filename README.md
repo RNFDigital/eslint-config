@@ -6,7 +6,7 @@ RNF Digital ESLint configuration
 
 ## Install
 ```sh
-npm install --save-dev @rnfdigital/eslint-config
+yarn add --dev @rnfdigital/eslint-config
 ```
 
 ## Setup

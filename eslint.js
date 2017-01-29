@@ -60,6 +60,7 @@ module.exports = {
     },
     rules: {
         // Possible Errors
+        'no-await-in-loop': 'error',
         'no-cond-assign': ['error', 'always'],
         'no-console': 'error',
         'no-constant-condition': 'error',
@@ -143,6 +144,7 @@ module.exports = {
         'no-proto': 'error',
         'no-redeclare': 'error',
         'no-return-assign': 'error',
+        'no-return-await': 'error',
         'no-script-url': 'error',
         'no-self-assign': 'error',
         'no-self-compare': 'error',
@@ -152,10 +154,13 @@ module.exports = {
         'no-useless-call': 'error',
         'no-useless-concat': 'error',
         'no-useless-escape': 'error',
+        'no-useless-return': 'error',
         'no-void': 'error',
         'no-warning-comments': 'error',
         'no-with': 'error',
+        'prefer-promise-reject-errors': 'error',
         radix: 'error',
+        'require-await': 'error',
         'vars-on-top': 'off',
         'wrap-iife': 'error',
         yoda: 'error',
@@ -234,8 +239,12 @@ module.exports = {
         'max-depth': ['error', 2],
         'max-len': ['error', {
             code: 120,
+            ignoreComments: true,
             ignoreTrailingComments: true,
             ignoreUrls: true,
+            ignoreStrings: true,
+            ignoreTemplateLiterals: true,
+            ignoreRegExpLiterals: true,
         }],
         'max-nested-callbacks': 'off',
         'max-params': ['error', 4],
@@ -253,6 +262,7 @@ module.exports = {
         'no-lonely-if': 'error',
         'no-mixed-operators': 'error',
         'no-mixed-spaces-and-tabs': 'error',
+        'no-multi-assign': 'error',
         'no-multiple-empty-lines': 'error',
         'no-negated-condition': 'error',
         'no-nested-ternary': 'error',
@@ -325,6 +335,12 @@ module.exports = {
         'object-shorthand': ['error', 'always'],
         'prefer-arrow-callback': 'error',
         'prefer-const': 'error',
+        'prefer-destructuring': ['error', {
+            array: true,
+            object: true,
+        }, {
+            enforceForRenamedProperties: false,
+        }],
         'prefer-rest-params': 'error',
         'prefer-spread': 'error',
         'prefer-reflect': 'off',
@@ -399,7 +415,7 @@ module.exports = {
 
         // eslint babel
         'babel/no-invalid-this': 'error',
-        'babel/no-await-in-loop': 'error',
+        'babel/no-await-in-loop': 'off', // Included in ESLint
 
         // eslint moment utc
         'moment-utc/no-moment-without-utc': 'error',
