@@ -6,7 +6,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
-# [1.10.0] - 2016-01-19
+# [1.11.0] - 2017-02-02
+## Added
+- comma-dangle
+- no-return-await
+- no-useless-return
+- prefer-promise-reject-errors
+- require-await
+- prefer-destructuring
+
+# [1.10.0] - 2017-01-19
 ## Changed
 - Event handler prefix changed from 'handle' to 'on'
 
