@@ -335,12 +335,6 @@ module.exports = {
         'object-shorthand': ['error', 'always'],
         'prefer-arrow-callback': 'error',
         'prefer-const': 'error',
-        'prefer-destructuring': ['error', {
-            array: false,
-            object: true,
-        }, {
-            enforceForRenamedProperties: false,
-        }],
         'prefer-rest-params': 'error',
         'prefer-spread': 'error',
         'prefer-reflect': 'off',
