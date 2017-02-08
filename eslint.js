@@ -336,7 +336,7 @@ module.exports = {
         'prefer-arrow-callback': 'error',
         'prefer-const': 'error',
         'prefer-destructuring': ['error', {
-            array: true,
+            array: false,
             object: true,
         }, {
             enforceForRenamedProperties: false,
