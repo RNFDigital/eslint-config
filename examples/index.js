@@ -70,17 +70,6 @@ const goodPromise = new Promise((resolve, reject) => {
     return reject(new Error('Something bad happened'))
 })
 
-// Prefer Destructuring
-
-const arr = [1, 2]
-const obj = {f: 1, g: 2}
-
-const d = arr[0] // eslint-disable-line prefer-destructuring
-const f = obj.f // eslint-disable-line prefer-destructuring
-
-const [g] = arr
-const {h} = obj
-
 // No Await in Loop
 
 const foo = async (things) => {
