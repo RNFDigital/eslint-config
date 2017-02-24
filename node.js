@@ -3,7 +3,5 @@
 
 module.exports = {
     'extends': ['./eslint.js'],
-    env: {
-        node: true,
-    },
+    env: {node: true},
 }

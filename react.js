@@ -4,11 +4,7 @@
 module.exports = {
     'extends': ['./eslint.js'],
     plugins: ['react'],
-    parserOptions: {
-        ecmaFeatures: {
-            jsx: true,
-        },
-    },
+    parserOptions: {ecmaFeatures: {jsx: true}},
     rules: {
         // ESLint rules that conflict
         'no-extra-parens': 'off',
@@ -52,13 +48,9 @@ module.exports = {
         }],
         'react/jsx-curly-spacing': ['error', 'never'],
         'react/jsx-equals-spacing': ['error', 'never'],
-        'react/jsx-filename-extension': ['error', {
-            extensions: ['.js'],
-        }],
+        'react/jsx-filename-extension': ['error', {extensions: ['.js']}],
         'react/jsx-first-prop-new-line': ['error', 'multiline'],
-        'react/jsx-handler-names': ['error', {
-            eventHandlerPrefix: 'on',
-        }],
+        'react/jsx-handler-names': ['error', {eventHandlerPrefix: 'on'}],
         'react/jsx-indent': ['error', 4],
         'react/jsx-indent-props': ['error', 4],
         'react/jsx-key': 'error',
