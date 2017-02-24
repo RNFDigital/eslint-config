@@ -37,6 +37,7 @@ module.exports = {
         embertest: false,
         webextensions: false,
         greasemonkey: false,
+        'jest/globals': true,
     },
     plugins: [
         'flowtype',
@@ -45,6 +46,7 @@ module.exports = {
         'eslint-comments',
         'babel',
         'moment-utc',
+        'jest',
     ],
     settings: {
         'import/ignore': [
@@ -439,5 +441,10 @@ module.exports = {
 
         // eslint moment utc
         'moment-utc/no-moment-without-utc': 'error',
+
+        // eslint jest
+        'jest/no-disabled-tests': 'error',
+        'jest/no-focused-tests': 'error',
+        'jest/no-identical-title': 'error',
     },
 }

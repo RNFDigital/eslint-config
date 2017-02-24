@@ -95,3 +95,30 @@ const badAsync = async () => 1 // eslint-disable-line require-await
 const badReturnAwait = async () => await badAsync() // eslint-disable-line no-return-await
 
 /* eslint-enable no-unused-vars */
+
+// Jest
+
+describe('module 1', () => null)
+it('does not have eslint error', () => null)
+
+describe.skip('disabled 1', () => null) // eslint-disable-line jest/no-disabled-tests
+it.skip('disabled 2', () => null) // eslint-disable-line jest/no-disabled-tests
+test.skip('disabled 3', () => null) // eslint-disable-line jest/no-disabled-tests
+xdescribe('disabled 4', () => null) // eslint-disable-line jest/no-disabled-tests
+xit('disabled 5', () => null) // eslint-disable-line jest/no-disabled-tests
+xtest('disabled 6', () => null) // eslint-disable-line jest/no-disabled-tests
+
+describe.only('focused 1', () => null) // eslint-disable-line jest/no-focused-tests
+it.only('focused 2', () => null) // eslint-disable-line jest/no-focused-tests
+test.only('focused 3', () => null) // eslint-disable-line jest/no-focused-tests
+fdescribe('focused 4', () => null) // eslint-disable-line jest/no-focused-tests
+fit('focued 5', () => null) // eslint-disable-line jest/no-focused-tests
+ftest('focused 6', () => null) // eslint-disable-line jest/no-focused-tests, no-undef
+
+describe('foo', () => {
+    it('should do bar', () => null)
+    it('should do bar', () => null) // eslint-disable-line jest/no-identical-title
+
+    describe('baz', () => null)
+    describe('baz', () => null)  // eslint-disable-line jest/no-identical-title
+})
