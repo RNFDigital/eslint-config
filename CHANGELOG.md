@@ -6,6 +6,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+# [1.13.0] - 2017-24-02
+## Added
+- jest/no-disabled-tests
+- jest/no-focused-tests
+- jest/no-identical-title
+
+# [1.12.0] - 2017-02-10
+## Changed
+- disabled prefer-destructing of arrays
+
 # [1.11.0] - 2017-02-02
 ## Added
 - comma-dangle
