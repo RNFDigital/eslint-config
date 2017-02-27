@@ -301,7 +301,7 @@ module.exports = {
         }],
         'object-curly-spacing': ['error', 'never'],
         'object-property-newline': 'error',
-        'one-var-declaration-per-line': 'error',
+        'one-var-declaration-per-line': 'off',
         'one-var': ['error', 'never'],
         'operator-assignment': ['error', 'always'],
         'operator-linebreak': ['error', 'after'],
