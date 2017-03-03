@@ -46,6 +46,4 @@ const Hello3 = (props) => (
     />
 )
 
-Hello3.propTypes = {
-    onChange: PropTypes.func,
-}
+Hello3.propTypes = {onChange: PropTypes.func}

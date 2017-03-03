@@ -5,6 +5,20 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+# [1.14.0] - 2017-27-02
+## Added
+- class-methods-use-this
+- no-global-assign
+- capitalized-comments
+- func-name-matching
+- lines-around-directive
+- not-tabs
+- object-curly-newline
+- no-new-symbol
+
+## Changed
+- replaced no-spaced-func(deprecated) with func-call-spacing
+- replaced prefer-reflect(deprecated)
 
 # [1.13.0] - 2017-24-02
 ## Added

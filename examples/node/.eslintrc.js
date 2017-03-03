@@ -1,6 +1,4 @@
 /* @flow */
 /* eslint-env commonjs */
 
-module.exports = {
-    'extends': ['../../node.js'],
-}
+module.exports = {'extends': ['../../node.js']}

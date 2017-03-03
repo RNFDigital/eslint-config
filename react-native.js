@@ -20,7 +20,5 @@ module.exports = {
         setInterval: false,
         setTimeout: false,
     },
-    rules: {
-        'react-native/no-unused-styles': 'error',
-    },
+    rules: {'react-native/no-unused-styles': 'error'},
 }

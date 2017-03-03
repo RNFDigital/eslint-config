@@ -1,7 +1,7 @@
 {
   "name": "@rnfdigital/eslint-config",
   "description": "RNF Digital ESLint configuration",
-  "version": "1.13.0",
+  "version": "1.14.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RNFDigital/eslint-config.git"
@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
-    "eslint": "^3.14.1",
+    "eslint": "^3.16.1",
     "eslint-plugin-babel": "^4.0.1",
     "eslint-plugin-eslint-comments": "^1.0.0",
     "eslint-plugin-flowtype": "^2.30.0",
@@ -44,7 +44,7 @@
   },
   "peerDependencies": {
     "babel-eslint": "^7.1.1",
-    "eslint": "^3.14.1",
+    "eslint": "^3.16.1",
     "eslint-plugin-babel": "^4.0.1",
     "eslint-plugin-eslint-comments": "^1.0.0",
     "eslint-plugin-flowtype": "^2.30.0",

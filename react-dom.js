@@ -3,7 +3,5 @@
 
 module.exports = {
     'extends': ['./react.js'],
-    env: {
-        browser: true,
-    },
+    env: {browser: true},
 }
