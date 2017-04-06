@@ -12,10 +12,11 @@ module.exports = {
         // React
         'react/display-name': 'error',
         'react/forbid-component-props': 'off',
+        'react/forbid-foreign-prop-types': 'error',
         'react/forbid-prop-types': 'error',
         'react/no-children-prop': 'error',
-        'react/no-danger': 'error',
         'react/no-danger-with-children': 'error',
+        'react/no-danger': 'error',
         'react/no-deprecated': 'error',
         'react/no-did-mount-set-state': 'error',
         'react/no-did-update-set-state': 'error',
@@ -39,6 +40,7 @@ module.exports = {
         'react/sort-comp': 'error',
         'react/sort-prop-types': 'error',
         'react/style-prop-object': 'off',
+        'react/void-dom-elements-no-children': 'error',
 
         // JSX
         'react/jsx-boolean-value': 'error',
