@@ -58,7 +58,7 @@ const a = b = c = 5 // eslint-disable-line no-multi-assign
 
 // Promises
 
-const badPromise = new Promise((resolve, reject) => {
+const badPromise = new Promise((resolve: Function, reject: Function) => {
     if (a === 5) {
         return resolve('Success')
     }
@@ -66,7 +66,7 @@ const badPromise = new Promise((resolve, reject) => {
     return reject('Something bad happened') // eslint-disable-line prefer-promise-reject-errors
 })
 
-const goodPromise = new Promise((resolve, reject) => {
+const goodPromise = new Promise((resolve: Function, reject: Function) => {
     if (a === 5) {
         return resolve('Success')
     }
@@ -76,7 +76,7 @@ const goodPromise = new Promise((resolve, reject) => {
 
 // No Await in Loop
 
-const foo = async (things) => {
+const foo = async (things: any) => {
     const results = []
 
     for (const thing of things) {
@@ -97,14 +97,14 @@ const badReturnAwait = async () => await badAsync() // eslint-disable-line no-re
 // Class methods use this
 
 class SampleComponent {
-    getSumOfArray(numbers = []) { // eslint-disable-line class-methods-use-this
-        return numbers.reduce((sum, item) => sum + item, 0)
+    getSumOfArray(numbers: Array<number> = []) { // eslint-disable-line class-methods-use-this
+        return numbers.reduce((sum: number, item: number) => sum + item, 0)
     }
 }
 
 // Function call spacing
 
-const sum = (a, b) => a + b
+const sum = (a: number, b: number): number => a + b
 
 sum (1, 2) // eslint-disable-line func-call-spacing
 sum // eslint-disable-line func-call-spacing
@@ -117,7 +117,7 @@ const helpers = function utility() { // eslint-disable-line func-name-matching
 }
 
 // Extra line after Directives
-const substract = (a, b) => {
+const subtract = (a: number, b: number) => {
     'use asm' // eslint-disable-line lines-around-directive
     const answer = a - b
 }

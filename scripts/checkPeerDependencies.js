@@ -2,7 +2,7 @@
 
 const packageJSON = require('../package.json')
 
-const arePackagesEqual = (packageJSON) => (packageName) => {
+const arePackagesEqual = (packageJSON: Object) => (packageName: string) => {
     const peerDependency = packageJSON.peerDependencies[packageName]
     const devDependency = packageJSON.devDependencies[packageName]
 

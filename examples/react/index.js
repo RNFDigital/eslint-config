@@ -41,7 +41,7 @@ const Hello = () => <span>Hello</span> // eslint-disable-line no-unused-vars
 
 const Hello2 = () => <span>Hello 2</span> // eslint-disable-line no-unused-vars
 
-const Hello3 = (props) => (
+const Hello3 = (props: Object) => (
     <input
         onChange={props.onChange}
     />
