@@ -391,7 +391,7 @@ module.exports = {
         'import/no-named-as-default': 'error',
         'import/no-named-as-default-member': 'error',
         'import/no-deprecated': 'warn',
-        'import/no-extraneous-dependencies': 'error',
+        'import/no-extraneous-dependencies': 'off',
         'import/no-mutable-exports': 'error',
         'import/no-amd': 'error',
         'import/imports-first': 'error',
