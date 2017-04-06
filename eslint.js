@@ -437,7 +437,6 @@ module.exports = {
 
         // eslint babel
         'babel/no-invalid-this': 'error',
-        'babel/no-await-in-loop': 'off', // Included in ESLint
 
         // eslint moment utc
         'moment-utc/no-moment-without-utc': 'error',
