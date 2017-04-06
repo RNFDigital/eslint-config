@@ -14,12 +14,13 @@ const onChange = () => 1
 
 const singleProp = <input onChange={onChange} />
 const multiProp = (
-    <input
-        onBlur={onChange}
-        onChange={onChange}
-    >
+    <div>
+        <input
+            onBlur={onChange}
+            onChange={onChange}
+        />
         {multiLine}
-    </input>
+    </div>
 )
 const multiPropSelfClosing = (
     <input

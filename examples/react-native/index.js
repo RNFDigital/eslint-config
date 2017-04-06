@@ -3,11 +3,11 @@
 if (__DEV__) {
     alert('Hello World') // eslint-disable-line no-alert
 
-    setImmediate(() => 1)
+    setImmediate((): number => 1)
 
-    setInterval(() => 1, 1000)
+    setInterval((): number => 1, 1000)
 
-    requestAnimationFrame(() => 1)
+    requestAnimationFrame((): number => 1)
 
     setTimeout(() => {
         console.log('Hello') // eslint-disable-line no-console

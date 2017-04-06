@@ -433,7 +433,7 @@ module.exports = {
         'promise/no-nesting': 'error',
         'promise/no-promise-in-callback': 'error',
         'promise/no-callback-in-promise': 'error',
-        'promise/avoid-new': 'error',
+        'promise/avoid-new': 'off',
         'promise/prefer-await-to-then': 'error',
         'promise/prefer-await-to-callbacks': 'error',
 
@@ -447,7 +447,7 @@ module.exports = {
         'flowtype/no-weak-types': 'off',
         'flowtype/object-type-delimiter': 'error',
         'flowtype/require-parameter-type': 'error',
-        'flowtype/require-return-type': 'error',
+        'flowtype/require-return-type': 'off',
         'flowtype/require-valid-file-annotation': [
             'error',
             'always',
