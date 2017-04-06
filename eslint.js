@@ -383,20 +383,44 @@ module.exports = {
         'yield-star-spacing': 'off',
 
         // Import
+
+        // Static analysis
         'import/no-unresolved': 'error',
         'import/named': 'error',
         'import/default': 'error',
         'import/namespace': 'error',
+        'import/no-restricted-paths': 'off',
+        'import/no-absolute-path': 'error',
+        'import/no-dynamic-require': 'off',
+        'import/no-internal-modules': 'off',
+        'import/no-webpack-loader-syntax': 'off',
+
+        // Helpful warnings
         'import/export': 'error',
         'import/no-named-as-default': 'error',
         'import/no-named-as-default-member': 'error',
         'import/no-deprecated': 'warn',
         'import/no-extraneous-dependencies': 'off',
         'import/no-mutable-exports': 'error',
+
+        // Module systems
+        'import/unambiguous': 'off',
+        'import/no-commonjs': 'off',
         'import/no-amd': 'error',
-        'import/imports-first': 'error',
+        'import/no-nodejs-modules': 'off',
+
+        // Style guide
+        'import/first': 'error',
         'import/no-duplicates': 'error',
+        'import/no-namespace': 'off',
+        'import/extensions': ['error', {js: 'never'}],
+        'import/order': 'off',
+        'import/newline-after-import': 'error',
         'import/prefer-default-export': 'error',
+        'import/max-dependencies': 'off',
+        'import/no-unassigned-import': 'off',
+        'import/no-named-default': 'error',
+        'import/no-anonymous-default-export': 'off',
 
         // Promise
         'promise/catch-or-return': 'error',
