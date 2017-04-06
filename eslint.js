@@ -424,9 +424,16 @@ module.exports = {
 
         // Promise
         'promise/catch-or-return': 'error',
-        'promise/always-return': 'error',
+        'promise/always-return': 'off',
         'promise/param-names': 'error',
         'promise/no-native': 'off',
+        'promise/no-return-wrap': 'off',
+        'promise/no-nesting': 'error',
+        'promise/no-promise-in-callback': 'error',
+        'promise/no-callback-in-promise': 'error',
+        'promise/avoid-new': 'error',
+        'promise/prefer-await-to-then': 'error',
+        'promise/prefer-await-to-callbacks': 'error',
 
         // Flow type
         'flowtype/boolean-style': ['error', 'boolean'],
