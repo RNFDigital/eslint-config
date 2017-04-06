@@ -47,6 +47,7 @@ module.exports = {
         'babel',
         'moment-utc',
         'jest',
+        'jsdoc',
     ],
     settings: {
         'import/ignore': [
@@ -481,5 +482,18 @@ module.exports = {
         'jest/no-disabled-tests': 'error',
         'jest/no-focused-tests': 'error',
         'jest/no-identical-title': 'error',
+
+        // eslint jsdoc
+        'jsdoc/check-param-names': 'off',
+        'jsdoc/check-tag-names': 'error',
+        'jsdoc/check-types': 'error',
+        'jsdoc/newline-after-description': 'off',
+        'jsdoc/require-description-complete-sentence': 'error',
+        'jsdoc/require-hyphen-before-param-description': 'off',
+        'jsdoc/require-param': 'off',
+        'jsdoc/require-param-description': 'error',
+        'jsdoc/require-param-type': 'error',
+        'jsdoc/require-returns-description': 'error',
+        'jsdoc/require-returns-type': 'error',
     },
 }
