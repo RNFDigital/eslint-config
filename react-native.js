@@ -20,5 +20,10 @@ module.exports = {
         setInterval: false,
         setTimeout: false,
     },
-    rules: {'react-native/no-unused-styles': 'error'},
+    rules: {
+        'react-native/no-unused-styles': 'error',
+        'react-native/split-platform-components': 'off',
+        'react-native/no-inline-styles': 'error',
+        'react-native/no-color-literals': 'error',
+    },
 }
