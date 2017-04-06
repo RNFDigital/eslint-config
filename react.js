@@ -12,6 +12,7 @@ module.exports = {
         // React
         'react/display-name': 'error',
         'react/forbid-component-props': 'off',
+        'react/forbid-elements': 'off',
         'react/forbid-foreign-prop-types': 'error',
         'react/forbid-prop-types': 'error',
         'react/no-children-prop': 'error',
