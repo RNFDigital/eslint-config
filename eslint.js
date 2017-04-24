@@ -47,6 +47,7 @@ module.exports = {
         'babel',
         'moment-utc',
         'jest',
+        'jsdoc',
     ],
     settings: {
         'import/ignore': [
@@ -61,6 +62,7 @@ module.exports = {
     rules: {
         // Possible Errors
         'no-await-in-loop': 'error',
+        'no-compare-neg-zero': 'error',
         'no-cond-assign': ['error', 'always'],
         'no-console': 'error',
         'no-constant-condition': 'error',
@@ -69,8 +71,8 @@ module.exports = {
         'no-dupe-args': 'error',
         'no-dupe-keys': 'error',
         'no-duplicate-case': 'error',
-        'no-empty-character-class': 'error',
         'no-empty': 'error',
+        'no-empty-character-class': 'error',
         'no-ex-assign': 'error',
         'no-extra-boolean-cast': 'error',
         'no-extra-parens': ['error', 'all'],
@@ -236,8 +238,8 @@ module.exports = {
         indent: 'error',
         'jsx-quotes': ['error', 'prefer-single'],
         'key-spacing': 'error',
-        'line-comment-position': 'off',
         'keyword-spacing': 'error',
+        'line-comment-position': 'off',
         'linebreak-style': 'error',
         'lines-around-comment': 'error',
         'lines-around-directive': ['error', {
@@ -258,13 +260,13 @@ module.exports = {
         'max-nested-callbacks': 'off',
         'max-params': ['error', 4],
         'max-statements': 'error',
-        'multiline-ternary': 'off',
         'max-statements-per-line': 'error',
-        'newline-before-return': 'error',
-        'newline-per-chained-call': 'error',
+        'multiline-ternary': 'off',
         'new-cap': 'off',
         'new-parens': 'error',
         'newline-after-var': 'error',
+        'newline-before-return': 'error',
+        'newline-per-chained-call': 'error',
         'no-array-constructor': 'error',
         'no-bitwise': 'error',
         'no-continue': 'error',
@@ -291,6 +293,7 @@ module.exports = {
         'no-underscore-dangle': 'error',
         'no-unneeded-ternary': 'error',
         'no-whitespace-before-property': 'error',
+        'nonblock-statement-body-position': 'off',
         'object-curly-newline': ['error', {
             ObjectExpression: {
                 multiline: true,
@@ -303,8 +306,8 @@ module.exports = {
         }],
         'object-curly-spacing': ['error', 'never'],
         'object-property-newline': 'error',
-        'one-var-declaration-per-line': 'off',
         'one-var': ['error', 'never'],
+        'one-var-declaration-per-line': 'off',
         'operator-assignment': ['error', 'always'],
         'operator-linebreak': ['error', 'after'],
         'padded-blocks': ['error', 'never'],
@@ -315,11 +318,11 @@ module.exports = {
         quotes: ['error', 'single', 'avoid-escape'],
         'require-jsdoc': 'off',
         semi: ['error', 'never'],
-        'sort-keys': 'off',
         'semi-spacing': ['error', {
             before: false,
             after: true,
         }],
+        'sort-keys': 'off',
         'sort-vars': 'off',
         'space-before-blocks': ['error', 'always'],
         'space-before-function-paren': ['error', {
@@ -367,8 +370,8 @@ module.exports = {
         'prefer-rest-params': 'error',
         'prefer-spread': 'error',
         'prefer-template': 'error',
-        'rest-spread-spacing': 'error',
         'require-yield': 'error',
+        'rest-spread-spacing': 'error',
         'symbol-description': 'error',
         'sort-imports': ['error', {
             ignoreCase: true,
@@ -383,26 +386,57 @@ module.exports = {
         'yield-star-spacing': 'off',
 
         // Import
+
+        // Static analysis
         'import/no-unresolved': 'error',
         'import/named': 'error',
         'import/default': 'error',
         'import/namespace': 'error',
+        'import/no-restricted-paths': 'off',
+        'import/no-absolute-path': 'error',
+        'import/no-dynamic-require': 'off',
+        'import/no-internal-modules': 'off',
+        'import/no-webpack-loader-syntax': 'off',
+
+        // Helpful warnings
         'import/export': 'error',
         'import/no-named-as-default': 'error',
         'import/no-named-as-default-member': 'error',
         'import/no-deprecated': 'warn',
-        'import/no-extraneous-dependencies': 'error',
+        'import/no-extraneous-dependencies': 'off',
         'import/no-mutable-exports': 'error',
+
+        // Module systems
+        'import/unambiguous': 'off',
+        'import/no-commonjs': 'off',
         'import/no-amd': 'error',
-        'import/imports-first': 'error',
+        'import/no-nodejs-modules': 'off',
+
+        // Style guide
+        'import/first': 'error',
         'import/no-duplicates': 'error',
+        'import/no-namespace': 'off',
+        'import/extensions': ['error', {js: 'never'}],
+        'import/order': 'off',
+        'import/newline-after-import': 'error',
         'import/prefer-default-export': 'error',
+        'import/max-dependencies': 'off',
+        'import/no-unassigned-import': 'off',
+        'import/no-named-default': 'error',
+        'import/no-anonymous-default-export': 'off',
 
         // Promise
         'promise/catch-or-return': 'error',
-        'promise/always-return': 'error',
+        'promise/always-return': 'off',
         'promise/param-names': 'error',
         'promise/no-native': 'off',
+        'promise/no-return-wrap': 'off',
+        'promise/no-nesting': 'error',
+        'promise/no-promise-in-callback': 'error',
+        'promise/no-callback-in-promise': 'error',
+        'promise/avoid-new': 'off',
+        'promise/prefer-await-to-then': 'error',
+        'promise/prefer-await-to-callbacks': 'error',
 
         // Flow type
         'flowtype/boolean-style': ['error', 'boolean'],
@@ -410,22 +444,25 @@ module.exports = {
         'flowtype/delimiter-dangle': ['error', 'only-multiline'],
         'flowtype/generic-spacing': ['error', 'never'],
         'flowtype/no-dupe-keys': 'error',
+        'flowtype/no-primitive-constructor-types': 'error',
         'flowtype/no-weak-types': 'off',
-        'flowtype/require-parameter-type': 'off',
+        'flowtype/object-type-delimiter': 'error',
+        'flowtype/require-parameter-type': 'error',
         'flowtype/require-return-type': 'off',
         'flowtype/require-valid-file-annotation': [
             'error',
-            'always', {annotationStyle: 'block'},
+            'always',
+            {annotationStyle: 'block'},
         ],
+        'flowtype/require-variable-type': 'off',
         'flowtype/semi': ['error', 'never'],
-        'flowtype/sort-keys': 'error',
+        'flowtype/sort-keys': 'off',
         'flowtype/space-after-type-colon': ['error', 'always'],
         'flowtype/space-before-generic-bracket': ['error', 'never'],
         'flowtype/space-before-type-colon': ['error', 'never'],
         'flowtype/type-id-match': 'off',
         'flowtype/union-intersection-spacing': ['error', 'always'],
         'flowtype/use-flow-type': 'error',
-        'flowtype/valid-syntax': 'error',
 
         // eslint comments
         'eslint-comments/disable-enable-pair': 'error',
@@ -437,7 +474,6 @@ module.exports = {
 
         // eslint babel
         'babel/no-invalid-this': 'error',
-        'babel/no-await-in-loop': 'off', // Included in ESLint
 
         // eslint moment utc
         'moment-utc/no-moment-without-utc': 'error',
@@ -446,5 +482,18 @@ module.exports = {
         'jest/no-disabled-tests': 'error',
         'jest/no-focused-tests': 'error',
         'jest/no-identical-title': 'error',
+
+        // eslint jsdoc
+        'jsdoc/check-param-names': 'off',
+        'jsdoc/check-tag-names': 'error',
+        'jsdoc/check-types': 'error',
+        'jsdoc/newline-after-description': 'off',
+        'jsdoc/require-description-complete-sentence': 'error',
+        'jsdoc/require-hyphen-before-param-description': 'off',
+        'jsdoc/require-param': 'off',
+        'jsdoc/require-param-description': 'error',
+        'jsdoc/require-param-type': 'error',
+        'jsdoc/require-returns-description': 'error',
+        'jsdoc/require-returns-type': 'error',
     },
 }

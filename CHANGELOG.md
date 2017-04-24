@@ -5,6 +5,51 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+# [1.15.0] - 2017-04-24
+## Added
+- no-compare-neg-zero
+- import/no-absolute-path
+- import/extensions
+- import/newline-after-import
+- import/no-named-default
+- promise/no-nesting
+- promise/no-promise-in-callback
+- promise/prefer-await-to-then
+- promise/prefer-await-to-callbacks
+- flowtype/no-primitive-constructor-types
+- flowtype/object-type-delimiter
+- jsdoc/check-tag-names
+- jsdoc/check-types
+- jsdoc/require-description-complete-sentence
+- jsdoc/require-param-description
+- jsdoc/require-parameter-type
+- jsdoc/require-returns-description
+- jsdoc/require-returns-type
+- react/forbid-foreign-prop-types
+- react/void-dom-elements-no-children
+- react-native/no-inline-styles
+- react-native/no-color-literals
+- other import rules but turned off to keep a record
+- other promise rules but turned off to keep a record
+- other flowtype rules but turned off to keep a record
+- other jsdoc rules but turned off to keep a record
+- other react rules but turned off to keep a record
+- other react-native rules but turned off to keep a record
+
+## Changed
+- import/no-extraneous-dependencies turned off (caused issues in Hydra)
+- promise/always-return turned off
+- flowtype/require-parameter-type turned on
+- flowtype/sort-keys turned off
+- react/no-unused-prop-types turned off
+- react/prefer-stateless-function turned off
+- react/prop-types turned off
+- react/require-optimization turned off
+- removed the deprecated flowtype/valid-syntax
+- updated multiple packages
+- added flow annotations where needed to support new rules
+
 # [1.14.0] - 2017-27-02
 ## Added
 - class-methods-use-this

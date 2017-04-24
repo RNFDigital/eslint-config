@@ -14,12 +14,13 @@ const onChange = () => 1
 
 const singleProp = <input onChange={onChange} />
 const multiProp = (
-    <input
-        onBlur={onChange}
-        onChange={onChange}
-    >
+    <div>
+        <input
+            onBlur={onChange}
+            onChange={onChange}
+        />
         {multiLine}
-    </input>
+    </div>
 )
 const multiPropSelfClosing = (
     <input
@@ -40,7 +41,7 @@ const Hello = () => <span>Hello</span> // eslint-disable-line no-unused-vars
 
 const Hello2 = () => <span>Hello 2</span> // eslint-disable-line no-unused-vars
 
-const Hello3 = (props) => (
+const Hello3 = (props: Object) => (
     <input
         onChange={props.onChange}
     />
