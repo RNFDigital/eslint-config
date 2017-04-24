@@ -407,7 +407,7 @@ module.exports = {
         'import/no-mutable-exports': 'error',
 
         // Module systems
-        'import/unambiguous': 'error',
+        'import/unambiguous': 'off',
         'import/no-commonjs': 'off',
         'import/no-amd': 'error',
         'import/no-nodejs-modules': 'off',
