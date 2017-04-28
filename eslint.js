@@ -340,6 +340,7 @@ module.exports = {
         'flowtype/generic-spacing': ['error', 'never'],
         'flowtype/no-dupe-keys': 'error',
         'flowtype/no-primitive-constructor-types': 'error',
+        'flowtype/no-types-missing-file-annotation': 'error',
         'flowtype/no-weak-types': 'off',
         'flowtype/object-type-delimiter': 'error',
         'flowtype/require-parameter-type': 'error',
