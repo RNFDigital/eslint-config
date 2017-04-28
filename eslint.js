@@ -39,24 +39,9 @@ module.exports = {
         greasemonkey: false,
         'jest/globals': true,
     },
-    plugins: [
-        'flowtype',
-        'import',
-        'promise',
-        'eslint-comments',
-        'babel',
-        'moment-utc',
-        'jest',
-        'jsdoc',
-    ],
+    plugins: ['flowtype', 'import', 'promise', 'eslint-comments', 'babel', 'moment-utc', 'jest', 'jsdoc', 'prettier'],
     settings: {
-        'import/ignore': [
-            'node_modules',
-            '.png',
-            '.jpg',
-            '.json',
-            '.html',
-        ],
+        'import/ignore': ['node_modules', '.png', '.jpg', '.json', '.html'],
         flowtype: {onlyFilesWithFlowAnnotation: false},
     },
     rules: {
@@ -128,10 +113,13 @@ module.exports = {
         // Covered by babel/no-invalid-this
         'no-invalid-this': 'off',
         'no-iterator': 'error',
-        'no-labels': ['error', {
-            allowLoop: true,
-            allowSwitch: true,
-        }],
+        'no-labels': [
+            'error',
+            {
+                allowLoop: true,
+                allowSwitch: true,
+            },
+        ],
         'no-lone-blocks': 'error',
         'no-loop-func': 'error',
         'no-magic-numbers': 'off',
@@ -205,17 +193,23 @@ module.exports = {
         'brace-style': ['error', '1tbs', {allowSingleLine: false}],
         camelcase: ['error', {properties: 'always'}],
         'capitalized-comments': 'error',
-        'comma-dangle': ['error', {
-            arrays: 'always-multiline',
-            objects: 'always-multiline',
-            imports: 'always-multiline',
-            exports: 'always-multiline',
-            functions: 'always-multiline',
-        }],
-        'comma-spacing': ['error', {
-            before: false,
-            after: true,
-        }],
+        'comma-dangle': [
+            'error',
+            {
+                arrays: 'always-multiline',
+                objects: 'always-multiline',
+                imports: 'always-multiline',
+                exports: 'always-multiline',
+                functions: 'always-multiline',
+            },
+        ],
+        'comma-spacing': [
+            'error',
+            {
+                before: false,
+                after: true,
+            },
+        ],
         'comma-style': ['error', 'last'],
         'computed-property-spacing': ['error', 'never'],
         'consistent-this': 'off',
@@ -224,15 +218,7 @@ module.exports = {
         'func-name-matching': 'error',
         'func-names': 'error',
         'func-style': ['error', 'expression'],
-        'id-blacklist': [
-            'error',
-            'data',
-            'err',
-            'e',
-            'cb',
-            'callback',
-            'window',
-        ],
+        'id-blacklist': ['error', 'data', 'err', 'e', 'cb', 'callback', 'window'],
         'id-length': 'off',
         'id-match': 'off',
         indent: 'error',
@@ -242,20 +228,26 @@ module.exports = {
         'line-comment-position': 'off',
         'linebreak-style': 'error',
         'lines-around-comment': 'error',
-        'lines-around-directive': ['error', {
-            before: 'never',
-            after: 'always',
-        }],
+        'lines-around-directive': [
+            'error',
+            {
+                before: 'never',
+                after: 'always',
+            },
+        ],
         'max-depth': ['error', 2],
-        'max-len': ['error', {
-            code: 120,
-            ignoreComments: true,
-            ignoreTrailingComments: true,
-            ignoreUrls: true,
-            ignoreStrings: true,
-            ignoreTemplateLiterals: true,
-            ignoreRegExpLiterals: true,
-        }],
+        'max-len': [
+            'error',
+            {
+                code: 120,
+                ignoreComments: true,
+                ignoreTrailingComments: true,
+                ignoreUrls: true,
+                ignoreStrings: true,
+                ignoreTemplateLiterals: true,
+                ignoreRegExpLiterals: true,
+            },
+        ],
         'max-lines': 'off',
         'max-nested-callbacks': 'off',
         'max-params': ['error', 4],
@@ -280,7 +272,8 @@ module.exports = {
         'no-nested-ternary': 'error',
         'no-new-object': 'error',
         'no-plusplus': 'off',
-        'no-restricted-syntax': ['error',
+        'no-restricted-syntax': [
+            'error',
             'DoWhileStatement',
             'WhileStatement',
             'ForStatement',
@@ -294,16 +287,19 @@ module.exports = {
         'no-unneeded-ternary': 'error',
         'no-whitespace-before-property': 'error',
         'nonblock-statement-body-position': 'off',
-        'object-curly-newline': ['error', {
-            ObjectExpression: {
-                multiline: true,
-                minProperties: 2,
+        'object-curly-newline': [
+            'error',
+            {
+                ObjectExpression: {
+                    multiline: true,
+                    minProperties: 2,
+                },
+                ObjectPattern: {
+                    multiline: true,
+                    minProperties: 3,
+                },
             },
-            ObjectPattern: {
-                multiline: true,
-                minProperties: 3,
-            },
-        }],
+        ],
         'object-curly-spacing': ['error', 'never'],
         'object-property-newline': 'error',
         'one-var': ['error', 'never'],
@@ -311,25 +307,35 @@ module.exports = {
         'operator-assignment': ['error', 'always'],
         'operator-linebreak': ['error', 'after'],
         'padded-blocks': ['error', 'never'],
-        'quote-props': ['error', 'as-needed', {
-            numbers: true,
-            keywords: true,
-        }],
+        'quote-props': [
+            'error',
+            'as-needed',
+            {
+                numbers: true,
+                keywords: true,
+            },
+        ],
         quotes: ['error', 'single', 'avoid-escape'],
         'require-jsdoc': 'off',
         semi: ['error', 'never'],
-        'semi-spacing': ['error', {
-            before: false,
-            after: true,
-        }],
+        'semi-spacing': [
+            'error',
+            {
+                before: false,
+                after: true,
+            },
+        ],
         'sort-keys': 'off',
         'sort-vars': 'off',
         'space-before-blocks': ['error', 'always'],
-        'space-before-function-paren': ['error', {
-            anonymous: 'always',
-            named: 'never',
-            asyncArrow: 'always',
-        }],
+        'space-before-function-paren': [
+            'error',
+            {
+                anonymous: 'always',
+                named: 'never',
+                asyncArrow: 'always',
+            },
+        ],
         'space-in-parens': ['error', 'never'],
         'space-infix-ops': 'error',
         'space-unary-ops': 'error',
@@ -341,15 +347,21 @@ module.exports = {
         // ECMAScript 6
         'arrow-body-style': 'error',
         'arrow-parens': ['error', 'always'],
-        'arrow-spacing': ['error', {
-            before: true,
-            after: true,
-        }],
+        'arrow-spacing': [
+            'error',
+            {
+                before: true,
+                after: true,
+            },
+        ],
         'constructor-super': 'error',
-        'generator-star-spacing': ['error', {
-            before: false,
-            after: true,
-        }],
+        'generator-star-spacing': [
+            'error',
+            {
+                before: false,
+                after: true,
+            },
+        ],
         'no-class-assign': 'error',
         'no-confusing-arrow': 'off',
         'no-const-assign': 'error',
@@ -373,15 +385,13 @@ module.exports = {
         'require-yield': 'error',
         'rest-spread-spacing': 'error',
         'symbol-description': 'error',
-        'sort-imports': ['error', {
-            ignoreCase: true,
-            memberSyntaxSortOrder: [
-                'single',
-                'multiple',
-                'none',
-                'all',
-            ],
-        }],
+        'sort-imports': [
+            'error',
+            {
+                ignoreCase: true,
+                memberSyntaxSortOrder: ['single', 'multiple', 'none', 'all'],
+            },
+        ],
         'template-curly-spacing': 'error',
         'yield-star-spacing': 'off',
 
@@ -449,11 +459,7 @@ module.exports = {
         'flowtype/object-type-delimiter': 'error',
         'flowtype/require-parameter-type': 'error',
         'flowtype/require-return-type': 'off',
-        'flowtype/require-valid-file-annotation': [
-            'error',
-            'always',
-            {annotationStyle: 'block'},
-        ],
+        'flowtype/require-valid-file-annotation': ['error', 'always', {annotationStyle: 'block'}],
         'flowtype/require-variable-type': 'off',
         'flowtype/semi': ['error', 'never'],
         'flowtype/sort-keys': 'off',
@@ -495,5 +501,20 @@ module.exports = {
         'jsdoc/require-param-type': 'error',
         'jsdoc/require-returns-description': 'error',
         'jsdoc/require-returns-type': 'error',
+
+        // eslint prettier
+        'prettier/prettier': [
+            'error',
+            {
+                useTabs: false,
+                printWidth: 120,
+                tabWidth: 4,
+                singleQuote: true,
+                trailingComma: 'es5',
+                bracketSpacing: false,
+                jsxBracketSameLine: false,
+                semi: false,
+            },
+        ],
     },
 }

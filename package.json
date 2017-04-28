@@ -1,7 +1,7 @@
 {
   "name": "@rnfdigital/eslint-config",
   "description": "RNF Digital ESLint configuration",
-  "version": "1.15.0",
+  "version": "2.0.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RNFDigital/eslint-config.git"
@@ -37,10 +37,12 @@
     "eslint-plugin-jest": "^19.0.1",
     "eslint-plugin-jsdoc": "^3.0.0",
     "eslint-plugin-moment-utc": "^1.0.0",
+    "eslint-plugin-prettier": "^2.0.1",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^6.10.3",
     "eslint-plugin-react-native": "^2.3.1",
     "moment": "^2.18.1",
+    "prettier": "^1.2.2",
     "react": "^15.4.2"
   },
   "peerDependencies": {
@@ -55,6 +57,7 @@
     "eslint-plugin-moment-utc": "^1.0.0",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^6.10.3",
-    "eslint-plugin-react-native": "^2.3.1"
+    "eslint-plugin-react-native": "^2.3.1",
+    "prettier": "^1.2.2",
   }
 }
