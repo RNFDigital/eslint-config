@@ -2,7 +2,7 @@
 /* eslint-env commonjs */
 
 module.exports = {
-    'extends': ['./eslint.js'],
+    extends: ['./eslint.js'],
     plugins: ['react'],
     parserOptions: {ecmaFeatures: {jsx: true}},
     rules: {
@@ -45,39 +45,33 @@ module.exports = {
 
         // JSX
         'react/jsx-boolean-value': 'error',
-        'react/jsx-closing-bracket-location': ['error', {
-            nonEmpty: 'tag-aligned',
-            selfClosing: 'tag-aligned',
-        }],
-        'react/jsx-curly-spacing': ['error', 'never'],
-        'react/jsx-equals-spacing': ['error', 'never'],
         'react/jsx-filename-extension': ['error', {extensions: ['.js']}],
-        'react/jsx-first-prop-new-line': ['error', 'multiline'],
         'react/jsx-handler-names': ['error', {eventHandlerPrefix: 'on'}],
-        'react/jsx-indent': ['error', 4],
-        'react/jsx-indent-props': ['error', 4],
         'react/jsx-key': 'error',
-        'react/jsx-max-props-per-line': ['error', {maximum: 1}],
-        'react/jsx-no-bind': ['error', {
-            ignoreRefs: true,
-            allowArrowFunctions: true,
-            allowBind: false,
-        }],
+        'react/jsx-no-bind': [
+            'error',
+            {
+                ignoreRefs: true,
+                allowArrowFunctions: true,
+                allowBind: false,
+            },
+        ],
         'react/jsx-no-comment-textnodes': 'error',
         'react/jsx-no-duplicate-props': 'error',
         'react/jsx-no-literals': 'off',
         'react/jsx-no-target-blank': 'error',
         'react/jsx-no-undef': 'error',
         'react/jsx-pascal-case': 'error',
-        'react/jsx-sort-props': ['error', {
-            callbacksLast: false,
-            shorthandFirst: false,
-            shorthandLast: false,
-            ignoreCase: false,
-        }],
-        'react/jsx-space-before-closing': ['error', 'always'],
+        'react/jsx-sort-props': [
+            'error',
+            {
+                callbacksLast: false,
+                shorthandFirst: false,
+                shorthandLast: false,
+                ignoreCase: false,
+            },
+        ],
         'react/jsx-uses-react': 'error',
         'react/jsx-uses-vars': 'error',
-        'react/jsx-wrap-multilines': 'error',
     },
 }

@@ -2,6 +2,6 @@
 /* eslint-env commonjs */
 
 module.exports = {
-    'extends': ['./react.js'],
+    extends: ['./react.js'],
     env: {browser: true},
 }
