@@ -89,7 +89,8 @@ const badReturnAwait = async () => await badAsync() // eslint-disable-line no-re
 // Class methods use this
 
 class SampleComponent {
-    static getSumOfArray(numbers: Array<number> = []) {
+    // eslint-disable-next-line class-methods-use-this
+    getSumOfArray(numbers: Array<number> = []) {
         return numbers.reduce((sum: number, item: number) => sum + item, 0)
     }
 }
@@ -99,10 +100,11 @@ class SampleComponent {
 const sum = (a: number, b: number): number => a + b
 
 sum(1, 2)
-sum(1, 2)
 
 // Function name matching
-const utility = function utility() {
+
+// eslint-disable-next-line func-name-matching
+const helpers = function utility() {
     return {}
 }
 
@@ -125,7 +127,6 @@ const threePropertyObject = {
 
 /* eslint-disable no-redeclare */
 const {one, two} = twoPropertyObject
-const {one, two, three} = threePropertyObject
 const {one, two, three} = threePropertyObject
 
 /* eslint-enable no-redeclare */
