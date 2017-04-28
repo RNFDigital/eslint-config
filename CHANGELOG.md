@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 # [2.0.0] - 2017-04-28
 ## Added
 - eslint-plugin-prettier
-- Added flowtype/no-types-missing-file-annotation (cannot declare Flow types without /* @flow */ annotation)
+- Added flowtype/no-types-missing-file-annotation
 
 ## Changed
 - Removed all rules that conflict with the prettier plugin
