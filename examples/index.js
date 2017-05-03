@@ -12,12 +12,7 @@ const add = (a: number, b: number): number => a + b
 // Trailing commas
 
 const array1 = [1, 2, 3]
-const array2 = [
-    1,
-    2,
-    3,
-    4,
-]
+const array2 = [1, 2, 3, 4]
 
 const obj1 = {
     a: 1,
@@ -31,10 +26,7 @@ const obj2 = {
 }
 
 add(1, 2)
-add(
-    1,
-    2,
-)
+add(1, 2)
 
 // Classes
 
@@ -54,7 +46,7 @@ moment.utc()
 
 let b = null
 let c = null
-const a = b = c = 5 // eslint-disable-line no-multi-assign
+const a = (b = c = 5) // eslint-disable-line no-multi-assign
 
 // Promises
 
@@ -97,7 +89,8 @@ const badReturnAwait = async () => await badAsync() // eslint-disable-line no-re
 // Class methods use this
 
 class SampleComponent {
-    getSumOfArray(numbers: Array<number> = []) { // eslint-disable-line class-methods-use-this
+    // eslint-disable-next-line class-methods-use-this
+    getSumOfArray(numbers: Array<number> = []) {
         return numbers.reduce((sum: number, item: number) => sum + item, 0)
     }
 }
@@ -106,13 +99,12 @@ class SampleComponent {
 
 const sum = (a: number, b: number): number => a + b
 
-sum (1, 2) // eslint-disable-line func-call-spacing
-sum // eslint-disable-line func-call-spacing
-(1, 2) // eslint-disable-line no-unexpected-multiline
-
+sum(1, 2)
 
 // Function name matching
-const helpers = function utility() { // eslint-disable-line func-name-matching
+
+// eslint-disable-next-line func-name-matching
+const helpers = function utility() {
     return {}
 }
 
@@ -124,7 +116,7 @@ const subtract = (a: number, b: number) => {
 
 // ObjectExpression formatting
 const onePropertyObject = {one: 1} // One liner for one property only
-const twoPropertyObject = {one: 4, two: 2}  // eslint-disable-line object-curly-newline, object-property-newline
+const twoPropertyObject = {one: 4, two: 2}
 const threePropertyObject = {
     one: 1,
     two: 2,
@@ -135,12 +127,7 @@ const threePropertyObject = {
 
 /* eslint-disable no-redeclare */
 const {one, two} = twoPropertyObject
-const {one, two, three} = threePropertyObject // eslint-disable-line object-curly-newline
-const {
-    one,
-    two,
-    three,
-} = threePropertyObject
+const {one, two, three} = threePropertyObject
 
 /* eslint-enable no-redeclare */
 
@@ -173,5 +160,5 @@ describe('foo', () => {
     it('should do bar', () => null) // eslint-disable-line jest/no-identical-title
 
     describe('baz', () => null)
-    describe('baz', () => null)  // eslint-disable-line jest/no-identical-title
+    describe('baz', () => null) // eslint-disable-line jest/no-identical-title
 })

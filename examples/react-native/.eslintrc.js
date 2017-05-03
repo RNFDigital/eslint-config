@@ -1,4 +1,4 @@
 /* @flow */
 /* eslint-env commonjs */
 
-module.exports = {'extends': ['../../react-native.js']}
+module.exports = {extends: ['../../react-native.js']}

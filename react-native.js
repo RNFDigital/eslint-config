@@ -2,7 +2,7 @@
 /* eslint-env commonjs */
 
 module.exports = {
-    'extends': ['./react.js'],
+    extends: ['./react.js'],
     plugins: ['react-native'],
     globals: {
         __DEV__: false,

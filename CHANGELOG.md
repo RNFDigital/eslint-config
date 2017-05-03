@@ -6,6 +6,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+# [2.0.0] - 2017-04-28
+## Added
+- eslint-plugin-prettier
+- Added flowtype/no-types-missing-file-annotation
+
+## Changed
+- Removed all rules that conflict with the prettier plugin
+- Extended eslint.js from prettier config
+- Updated packages
+
 # [1.15.0] - 2017-04-24
 ## Added
 - no-compare-neg-zero

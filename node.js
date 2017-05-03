@@ -2,6 +2,6 @@
 /* eslint-env commonjs */
 
 module.exports = {
-    'extends': ['./eslint.js'],
+    extends: ['./eslint.js'],
     env: {node: true},
 }
