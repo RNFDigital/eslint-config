@@ -10,7 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## Changed
 - Changed eslint-config-prettier to be a regular dependency
 - Turned off flowtype/require-parameter-type as we haven't reached a decision yet
-- Turned off react-native/no-color-literals as we don't think a colour for a specific file needs to be global
+- Turned off react-native/no-color-literals as we don't think a single use colour needs to be extracted as a const
 
 # [2.0.0] - 2017-04-28
 ## Added
