@@ -340,7 +340,7 @@ module.exports = {
         'flowtype/no-primitive-constructor-types': 'error',
         'flowtype/no-types-missing-file-annotation': 'error',
         'flowtype/no-weak-types': 'off',
-        'flowtype/require-parameter-type': 'error',
+        'flowtype/require-parameter-type': 'off',
         'flowtype/require-return-type': 'off',
         'flowtype/require-valid-file-annotation': ['error', 'always', {annotationStyle: 'block'}],
         'flowtype/require-variable-type': 'off',

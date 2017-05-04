@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+# [2.0.1] - 2017-05-04
+## Changed
+- Changed eslint-config-prettier to be a regular dependency
+- Turned off flowtype/require-parameter-type as we haven't reached a decision yet
+- Turned off react-native/no-color-literals as we don't require it
+
 # [2.0.0] - 2017-04-28
 ## Added
 - eslint-plugin-prettier
