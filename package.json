@@ -1,7 +1,7 @@
 {
   "name": "@rnfdigital/eslint-config",
   "description": "RNF Digital ESLint configuration",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RNFDigital/eslint-config.git"
@@ -27,10 +27,12 @@
     "test": "eslint --cache --ignore-pattern '!.eslintrc.js' .",
     "checkPeerDependencies": "node ./scripts/checkPeerDependencies.js"
   },
+  "dependencies": {
+    "eslint-config-prettier": "^1.7.0"
+  },
   "devDependencies": {
     "babel-eslint": "^7.2.2",
     "eslint": "^3.19.0",
-    "eslint-config-prettier": "^1.7.0",
     "eslint-plugin-babel": "^4.1.1",
     "eslint-plugin-eslint-comments": "^1.0.0",
     "eslint-plugin-flowtype": "^2.32.1",
