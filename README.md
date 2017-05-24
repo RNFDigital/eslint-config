@@ -34,3 +34,4 @@ module.exports = {
 - https://github.com/babel/eslint-plugin-babel
 - https://github.com/wunderflats/eslint-plugin-moment-utc
 - https://github.com/facebook/jest/tree/master/packages/eslint-plugin-jest
+- https://github.com/prettier/eslint-plugin-prettier
