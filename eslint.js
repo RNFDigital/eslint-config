@@ -377,6 +377,7 @@ module.exports = {
         'jsdoc/require-param': 'off',
         'jsdoc/require-param-description': 'error',
         'jsdoc/require-param-type': 'error',
+        'jsdoc/require-example': 'error',
         'jsdoc/require-returns-description': 'error',
         'jsdoc/require-returns-type': 'error',
 
