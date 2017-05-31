@@ -366,6 +366,7 @@ module.exports = {
         'jest/no-disabled-tests': 'error',
         'jest/no-focused-tests': 'error',
         'jest/no-identical-title': 'error',
+        'jest/valid-expect': 'error',
 
         // eslint jsdoc
         'jsdoc/check-param-names': 'off',
@@ -377,6 +378,7 @@ module.exports = {
         'jsdoc/require-param': 'off',
         'jsdoc/require-param-description': 'error',
         'jsdoc/require-param-type': 'error',
+        'jsdoc/require-example': 'error',
         'jsdoc/require-returns-description': 'error',
         'jsdoc/require-returns-type': 'error',
 

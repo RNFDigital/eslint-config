@@ -31,6 +31,7 @@ module.exports = {
         'react/no-unescaped-entities': 'error',
         'react/no-unknown-property': 'error',
         'react/no-unused-prop-types': 'off',
+        'react/no-will-update-set-state': 'error',
         'react/prefer-es6-class': 'error',
         'react/prefer-stateless-function': 'off',
         'react/prop-types': 'off',
@@ -66,6 +67,7 @@ module.exports = {
             'error',
             {
                 callbacksLast: false,
+                reservedFirst: true,
                 shorthandFirst: false,
                 shorthandLast: false,
                 ignoreCase: false,
