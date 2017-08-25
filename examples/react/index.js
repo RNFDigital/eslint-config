@@ -7,7 +7,9 @@ const selfClosing = <div />
 const multiLine = (
     <div>
         <span>Hello World</span>
-        <div>{selfClosing}</div>
+        <div>
+            {selfClosing}
+        </div>
     </div>
 )
 

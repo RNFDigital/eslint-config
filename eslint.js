@@ -88,6 +88,7 @@ module.exports = {
         'default-case': 'error',
         'dot-notation': ['error', {allowKeywords: true}],
         eqeqeq: 'error',
+        'for-direction': 'error',
         'guard-for-in': 'error',
         'no-alert': 'error',
         'no-caller': 'error',
@@ -174,6 +175,7 @@ module.exports = {
         'callback-return': ['error', ['callback', 'cb', 'next']],
         'global-require': 'off',
         'handle-callback-err': ['error', '^(err|error)$'],
+        'no-buffer-constructor': 'error',
         'no-mixed-requires': 'error',
         'no-new-require': 'error',
         'no-path-concat': 'error',
@@ -184,7 +186,6 @@ module.exports = {
 
         // Stylistic Issues
         camelcase: ['error', {properties: 'always'}],
-        'capitalized-comments': 'error',
         'comma-spacing': [
             'error',
             {
@@ -203,13 +204,6 @@ module.exports = {
         'line-comment-position': 'off',
         'linebreak-style': 'error',
         'lines-around-comment': 'error',
-        'lines-around-directive': [
-            'error',
-            {
-                before: 'never',
-                after: 'always',
-            },
-        ],
         'max-depth': ['error', 2],
         'max-lines': 'off',
         'max-nested-callbacks': 'off',
@@ -217,8 +211,6 @@ module.exports = {
         'max-statements': 'error',
         'max-statements-per-line': 'error',
         'new-cap': 'off',
-        'newline-after-var': 'error',
-        'newline-before-return': 'error',
         'no-array-constructor': 'error',
         'no-bitwise': 'error',
         'no-continue': 'error',
@@ -243,6 +235,13 @@ module.exports = {
         'no-unneeded-ternary': 'error',
         'one-var': ['error', 'never'],
         'operator-assignment': ['error', 'always'],
+        'padding-line-between-statements': [
+            'error',
+            {blankLine: 'always', prev: 'directive', next: '*'},
+            {blankLine: 'never', prev: 'directive', next: 'directive'},
+            {blankLine: 'always', prev: ['const', 'let', 'var'], next: '*'},
+            {blankLine: 'any', prev: ['const', 'let', 'var'], next: ['const', 'let', 'var']},
+        ],
         'require-jsdoc': 'off',
         'sort-keys': 'off',
         'sort-vars': 'off',
@@ -251,6 +250,7 @@ module.exports = {
         // ECMAScript 6
         'arrow-body-style': 'error',
         'constructor-super': 'error',
+        'getter-return': 'error',
         'no-class-assign': 'error',
         'no-const-assign': 'error',
         'no-dupe-class-members': 'error',

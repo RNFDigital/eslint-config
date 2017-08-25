@@ -110,9 +110,10 @@ const helpers = function utility() {
 
 // Extra line after Directives
 const subtract = (a: number, b: number) => {
-    'use asm' // eslint-disable-line lines-around-directive
-    const answer = a - b
+    'use asm'
+    const answer = a - b // eslint-disable-line padding-line-between-statements
 }
+subtract() // eslint-disable-line padding-line-between-statements
 
 // ObjectExpression formatting
 const onePropertyObject = {one: 1} // One liner for one property only
@@ -162,3 +163,6 @@ describe('foo', () => {
     describe('baz', () => null)
     describe('baz', () => null) // eslint-disable-line jest/no-identical-title
 })
+
+// eslint-disable-next-line no-restricted-syntax, for-direction, no-empty
+for (let i = 10; i < 10; i--) {}
