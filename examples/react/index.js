@@ -39,3 +39,44 @@ const Hello2 = () => <span>Hello 2</span> // eslint-disable-line no-unused-vars
 const Hello3 = (props: Object) => <input onChange={props.onChange} />
 
 Hello3.propTypes = {onChange: PropTypes.func}
+
+const doSomething = () => null
+
+// allow lifecycle method without this
+// eslint-disable-next-line no-unused-vars
+class Hi extends React.Component {
+    getDefaultProps = () => {
+        doSomething()
+    }
+    getInitialState = () => {
+        doSomething()
+    }
+    getChildContext = () => {
+        doSomething()
+    }
+    componentWillMount = () => {
+        doSomething()
+    }
+    componentDidMount = () => {
+        doSomething()
+    }
+    componentWillReceiveProps = () => {
+        doSomething()
+    }
+    shouldComponentUpdate = () => {
+        doSomething()
+    }
+    componentWillUpdate = () => {
+        doSomething()
+    }
+    componentDidUpdate = () => {
+        doSomething()
+    }
+    componentWillUnmount = () => {
+        doSomething()
+    }
+
+    render() {
+        return '<div></div>'
+    }
+}
