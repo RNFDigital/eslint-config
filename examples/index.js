@@ -86,10 +86,7 @@ const badAsync = async () => 1 // eslint-disable-line require-await
 
 const badReturnAwait = async () => await badAsync() // eslint-disable-line no-return-await
 
-// Class methods use this
-
 class SampleComponent {
-    // eslint-disable-next-line class-methods-use-this
     getSumOfArray(numbers: Array<number> = []) {
         return numbers.reduce((sum: number, item: number) => sum + item, 0)
     }
@@ -110,9 +107,10 @@ const helpers = function utility() {
 
 // Extra line after Directives
 const subtract = (a: number, b: number) => {
-    'use asm' // eslint-disable-line lines-around-directive
-    const answer = a - b
+    'use asm'
+    const answer = a - b // eslint-disable-line padding-line-between-statements
 }
+subtract() // eslint-disable-line padding-line-between-statements
 
 // ObjectExpression formatting
 const onePropertyObject = {one: 1} // One liner for one property only
@@ -162,3 +160,6 @@ describe('foo', () => {
     describe('baz', () => null)
     describe('baz', () => null) // eslint-disable-line jest/no-identical-title
 })
+
+// eslint-disable-next-line no-restricted-syntax, for-direction, no-empty
+for (let i = 10; i < 10; i--) {}
