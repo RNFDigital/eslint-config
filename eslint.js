@@ -82,6 +82,7 @@ module.exports = {
         'accessor-pairs': 'error',
         'array-callback-return': 'error',
         'block-scoped-var': 'error',
+        'class-methods-use-this': 'off',
         complexity: ['error', 3],
         'consistent-return': 'error',
         'default-case': 'error',
@@ -185,6 +186,7 @@ module.exports = {
 
         // Stylistic Issues
         camelcase: ['error', {properties: 'always'}],
+        'capitalized-comments': 'off',
         'comma-spacing': [
             'error',
             {
@@ -197,6 +199,7 @@ module.exports = {
         'func-name-matching': 'error',
         'func-names': 'error',
         'func-style': ['error', 'expression'],
+        'id-blacklist': 'off',
         'id-length': 'off',
         'id-match': 'off',
         'line-comment-position': 'off',
