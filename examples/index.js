@@ -86,10 +86,7 @@ const badAsync = async () => 1 // eslint-disable-line require-await
 
 const badReturnAwait = async () => await badAsync() // eslint-disable-line no-return-await
 
-// Class methods use this
-
 class SampleComponent {
-    // eslint-disable-next-line class-methods-use-this
     getSumOfArray(numbers: Array<number> = []) {
         return numbers.reduce((sum: number, item: number) => sum + item, 0)
     }
