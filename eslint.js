@@ -241,7 +241,11 @@ module.exports = {
             {blankLine: 'always', prev: 'directive', next: '*'},
             {blankLine: 'never', prev: 'directive', next: 'directive'},
             {blankLine: 'always', prev: ['const', 'let', 'var'], next: '*'},
-            {blankLine: 'any', prev: ['const', 'let', 'var'], next: ['const', 'let', 'var']},
+            {
+                blankLine: 'any',
+                prev: ['const', 'let', 'var'],
+                next: ['const', 'let', 'var'],
+            },
         ],
         'require-jsdoc': 'off',
         'sort-keys': 'off',
@@ -280,6 +284,7 @@ module.exports = {
                 memberSyntaxSortOrder: ['single', 'multiple', 'none', 'all'],
             },
         ],
+        'lines-between-class-members': ['error', 'always'],
 
         // Import
 
