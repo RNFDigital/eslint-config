@@ -32,6 +32,7 @@ add(1, 2)
 
 class Hello {
     static foo = () => 1
+
     bar = () => {
         this.bar = 1
     }
