@@ -132,8 +132,6 @@ const {one, two, three} = threePropertyObject
 // No `new Symbol()`
 const symbolFoo = new Symbol('foo') // eslint-disable-line no-new-symbol
 
-/* eslint-enable no-unused-vars */
-
 // Jest
 
 describe('module 1', () => null)
@@ -163,3 +161,19 @@ describe('foo', () => {
 
 // eslint-disable-next-line no-restricted-syntax, for-direction, no-empty
 for (let i = 10; i < 10; i--) {}
+
+// Flow
+
+type FlowFoo = {|
+    a: number,
+    b: string,
+    c: boolean,
+|}
+
+const flowFoo: FlowFoo = {
+    a: 1,
+    b: '2',
+    c: true,
+}
+
+/* eslint-enable no-unused-vars */

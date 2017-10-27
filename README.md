@@ -6,7 +6,7 @@ RNF Digital ESLint configuration
 
 ## Install
 ```sh
-yarn add --dev @rnfdigital/eslint-config
+yarn add --dev @rnfdigital/eslint-config babel-eslint eslint eslint-config-prettier eslint-plugin-babel eslint-plugin-eslint-comments eslint-plugin-flowtype eslint-plugin-import eslint-plugin-jest eslint-plugin-jsdoc eslint-plugin-moment-utc eslint-plugin-prettier eslint-plugin-promise eslint-plugin-react eslint-plugin-react-native prettier
 ```
 
 ## Setup

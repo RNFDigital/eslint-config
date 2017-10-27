@@ -3,7 +3,6 @@ node_js:
 - node
 test:
 - yarn check
-- yarn checkPeerDependencies
 - yarn test
 cache: yarn
 deploy:

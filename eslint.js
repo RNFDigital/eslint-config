@@ -39,7 +39,7 @@ module.exports = {
         greasemonkey: false,
         'jest/globals': true,
     },
-    extends: ['prettier', 'prettier/flowtype', 'prettier/react'],
+    extends: ['prettier', 'prettier/flowtype'],
     plugins: ['flowtype', 'import', 'promise', 'eslint-comments', 'babel', 'moment-utc', 'jest', 'jsdoc', 'prettier'],
     settings: {
         'import/ignore': ['node_modules', '.png', '.jpg', '.json', '.html'],

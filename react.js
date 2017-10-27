@@ -2,7 +2,7 @@
 /* eslint-env commonjs */
 
 module.exports = {
-    extends: ['./eslint.js'],
+    extends: ['./eslint.js', 'prettier/react'],
     plugins: ['react'],
     parserOptions: {ecmaFeatures: {jsx: true}},
     rules: {
