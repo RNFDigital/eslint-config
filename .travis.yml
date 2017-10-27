@@ -1,9 +1,4 @@
 language: node_js
-node_js:
-- node
-test:
-- yarn check
-- yarn test
 cache: yarn
 deploy:
   provider: npm
