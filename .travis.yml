@@ -1,10 +1,6 @@
 language: node_js
 node_js:
-- node
-test:
-- yarn check
-- yarn checkPeerDependencies
-- yarn test
+  - "8"
 cache: yarn
 deploy:
   provider: npm

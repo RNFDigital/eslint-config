@@ -1,7 +1,7 @@
 {
   "name": "@rnfdigital/eslint-config",
   "description": "RNF Digital ESLint configuration",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RNFDigital/eslint-config.git"
@@ -24,43 +24,42 @@
     "react.js"
   ],
   "scripts": {
-    "test": "eslint --cache --ignore-pattern '!.eslintrc.js' .",
-    "checkPeerDependencies": "node ./scripts/checkPeerDependencies.js"
-  },
-  "dependencies": {
-    "eslint-config-prettier": "^2.3.0"
+    "test": "eslint --cache --ignore-pattern '!.eslintrc.js' ."
   },
   "devDependencies": {
-    "babel-eslint": "^7.2.2",
-    "eslint": "^4.5.0",
+    "babel-eslint": "^8.0.1",
+    "eslint": "^4.9.0",
+    "eslint-config-prettier": "^2.6.0",
     "eslint-plugin-babel": "^4.1.2",
     "eslint-plugin-eslint-comments": "^1.0.3",
-    "eslint-plugin-flowtype": "^2.35.0",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jest": "^20.0.3",
-    "eslint-plugin-jsdoc": "^3.1.2",
+    "eslint-plugin-flowtype": "^2.39.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jest": "^21.2.0",
+    "eslint-plugin-jsdoc": "^3.1.3",
     "eslint-plugin-moment-utc": "^1.0.0",
-    "eslint-plugin-prettier": "^2.2.0",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-react": "^7.3.0",
+    "eslint-plugin-prettier": "^2.3.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-react": "^7.4.0",
     "eslint-plugin-react-native": "^3.1.0",
-    "moment": "^2.18.1",
-    "prettier": "^1.6.1",
-    "react": "^15.6.1"
+    "moment": "^2.19.1",
+    "prettier": "^1.7.4",
+    "react": "^16.0.0"
   },
   "peerDependencies": {
-    "babel-eslint": "^7.2.2",
-    "eslint": "^4.5.0",
-    "eslint-plugin-babel": "^4.1.2",
-    "eslint-plugin-eslint-comments": "^1.0.3",
-    "eslint-plugin-flowtype": "^2.35.0",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jest": "^20.0.3",
-    "eslint-plugin-jsdoc": "^3.1.2",
-    "eslint-plugin-moment-utc": "^1.0.0",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-react": "^7.3.0",
-    "eslint-plugin-react-native": "^3.1.0",
-    "prettier": "^1.3.0"
+    "babel-eslint": ">=8.0.1",
+    "eslint": ">=4.9.0",
+    "eslint-config-prettier": ">=2.6.0",
+    "eslint-plugin-babel": ">=4.1.2",
+    "eslint-plugin-eslint-comments": ">=1.0.3",
+    "eslint-plugin-flowtype": ">=2.39.1",
+    "eslint-plugin-import": ">=2.8.0",
+    "eslint-plugin-jest": ">=21.2.0",
+    "eslint-plugin-jsdoc": ">=3.1.3",
+    "eslint-plugin-moment-utc": ">=1.0.0",
+    "eslint-plugin-prettier": ">=2.3.1",
+    "eslint-plugin-promise": ">=3.6.0",
+    "eslint-plugin-react": ">=7.4.0",
+    "eslint-plugin-react-native": ">=3.1.0",
+    "prettier": ">=1.7.4"
   }
 }
