@@ -218,7 +218,7 @@ module.exports = {
         'line-comment-position': 'off',
         'linebreak-style': 'error',
         'lines-around-comment': 'error',
-        'lines-between-class-members': 'error',
+        'lines-between-class-members': ['error', 'always', {exceptAfterSingleLine: true}],
         'max-depth': ['error', 2],
         'max-lines': 'off',
         'max-nested-callbacks': 'off',
@@ -415,6 +415,12 @@ module.exports = {
         ],
 
         // eslint sort-imports-es6-autofix
-        'sort-imports-es6-autofix/sort-imports-es6': 'error',
+        'sort-imports-es6-autofix/sort-imports-es6': [
+            'error',
+            {
+                ignoreCase: true,
+                memberSyntaxSortOrder: ['single', 'multiple', 'none', 'all'],
+            },
+        ],
     },
 }
