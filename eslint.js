@@ -419,7 +419,6 @@ module.exports = {
             'error',
             {
                 ignoreCase: true,
-                memberSyntaxSortOrder: ['single', 'multiple', 'none', 'all'],
             },
         ],
     },
