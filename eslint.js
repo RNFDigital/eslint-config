@@ -40,7 +40,18 @@ module.exports = {
         'jest/globals': true,
     },
     extends: ['prettier', 'prettier/flowtype'],
-    plugins: ['flowtype', 'import', 'promise', 'eslint-comments', 'babel', 'moment-utc', 'jest', 'jsdoc', 'prettier'],
+    plugins: [
+        'flowtype',
+        'import',
+        'promise',
+        'eslint-comments',
+        'babel',
+        'moment-utc',
+        'jest',
+        'jsdoc',
+        'prettier',
+        'sort-imports-es6-autofix',
+    ],
     settings: {
         'import/ignore': ['node_modules', '.png', '.jpg', '.json', '.html'],
         flowtype: {onlyFilesWithFlowAnnotation: false},
@@ -199,12 +210,15 @@ module.exports = {
         'func-name-matching': 'error',
         'func-names': 'error',
         'func-style': ['error', 'expression'],
+        'function-paren-newline': 'off',
         'id-blacklist': 'off',
         'id-length': 'off',
         'id-match': 'off',
+        'implicit-arrow-linebreak': 'off',
         'line-comment-position': 'off',
         'linebreak-style': 'error',
         'lines-around-comment': 'error',
+        'lines-between-class-members': 'error',
         'max-depth': ['error', 2],
         'max-lines': 'off',
         'max-nested-callbacks': 'off',
@@ -212,6 +226,7 @@ module.exports = {
         'max-statements': 'error',
         'max-statements-per-line': 'error',
         'new-cap': 'off',
+        'multiline-comment-style': 'off',
         'no-array-constructor': 'error',
         'no-bitwise': 'error',
         'no-continue': 'error',
@@ -273,13 +288,7 @@ module.exports = {
         'prefer-template': 'error',
         'require-yield': 'error',
         'symbol-description': 'error',
-        'sort-imports': [
-            'error',
-            {
-                ignoreCase: true,
-                memberSyntaxSortOrder: ['single', 'multiple', 'none', 'all'],
-            },
-        ],
+        'sort-imports': 'off',
 
         // Import
 
@@ -397,5 +406,8 @@ module.exports = {
                 semi: false,
             },
         ],
+
+        // eslint sort-imports-es6-autofix
+        'sort-imports-es6-autofix/sort-imports-es6': 'error',
     },
 }
