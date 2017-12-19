@@ -365,6 +365,8 @@ module.exports = {
         'eslint-comments/no-unused-disable': 'error',
         'eslint-comments/no-unused-enable': 'error',
         'eslint-comments/no-use': 'off',
+        'eslint-comments/no-aggregating-enable': 'error',
+        'eslint-comments/no-restricted-disable': 'off',
 
         // eslint babel
         'babel/no-invalid-this': 'error',
@@ -376,6 +378,10 @@ module.exports = {
         'jest/no-disabled-tests': 'error',
         'jest/no-focused-tests': 'error',
         'jest/no-identical-title': 'error',
+        'jest/no-large-snapshots': 'off',
+        'jest/prefer-to-have-length': 'error',
+        'jest/prefer-to-be-null': 'error',
+        'jest/prefer-to-be-undefined': 'error',
         'jest/valid-expect': 'error',
 
         // eslint jsdoc
@@ -391,6 +397,7 @@ module.exports = {
         'jsdoc/require-example': 'error',
         'jsdoc/require-returns-description': 'error',
         'jsdoc/require-returns-type': 'error',
+        'jsdoc/require-param-name': 'error',
 
         // eslint prettier
         'prettier/prettier': [
