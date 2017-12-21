@@ -40,7 +40,18 @@ module.exports = {
         'jest/globals': true,
     },
     extends: ['prettier', 'prettier/flowtype'],
-    plugins: ['flowtype', 'import', 'promise', 'eslint-comments', 'babel', 'moment-utc', 'jest', 'jsdoc', 'prettier'],
+    plugins: [
+        'flowtype',
+        'import',
+        'promise',
+        'eslint-comments',
+        'babel',
+        'moment-utc',
+        'jest',
+        'jsdoc',
+        'prettier',
+        'sort-imports-es6-autofix',
+    ],
     settings: {
         'import/ignore': ['node_modules', '.png', '.jpg', '.json', '.html'],
         flowtype: {onlyFilesWithFlowAnnotation: false},
@@ -199,12 +210,15 @@ module.exports = {
         'func-name-matching': 'error',
         'func-names': 'error',
         'func-style': ['error', 'expression'],
+        'function-paren-newline': 'off',
         'id-blacklist': 'off',
         'id-length': 'off',
         'id-match': 'off',
+        'implicit-arrow-linebreak': 'off',
         'line-comment-position': 'off',
         'linebreak-style': 'error',
         'lines-around-comment': 'error',
+        'lines-between-class-members': ['error', 'always', {exceptAfterSingleLine: true}],
         'max-depth': ['error', 2],
         'max-lines': 'off',
         'max-nested-callbacks': 'off',
@@ -212,6 +226,7 @@ module.exports = {
         'max-statements': 'error',
         'max-statements-per-line': 'error',
         'new-cap': 'off',
+        'multiline-comment-style': 'off',
         'no-array-constructor': 'error',
         'no-bitwise': 'error',
         'no-continue': 'error',
@@ -273,13 +288,7 @@ module.exports = {
         'prefer-template': 'error',
         'require-yield': 'error',
         'symbol-description': 'error',
-        'sort-imports': [
-            'error',
-            {
-                ignoreCase: true,
-                memberSyntaxSortOrder: ['single', 'multiple', 'none', 'all'],
-            },
-        ],
+        'sort-imports': 'off',
 
         // Import
 
@@ -356,6 +365,8 @@ module.exports = {
         'eslint-comments/no-unused-disable': 'error',
         'eslint-comments/no-unused-enable': 'error',
         'eslint-comments/no-use': 'off',
+        'eslint-comments/no-aggregating-enable': 'error',
+        'eslint-comments/no-restricted-disable': 'off',
 
         // eslint babel
         'babel/no-invalid-this': 'error',
@@ -367,6 +378,10 @@ module.exports = {
         'jest/no-disabled-tests': 'error',
         'jest/no-focused-tests': 'error',
         'jest/no-identical-title': 'error',
+        'jest/no-large-snapshots': 'off',
+        'jest/prefer-to-have-length': 'error',
+        'jest/prefer-to-be-null': 'error',
+        'jest/prefer-to-be-undefined': 'error',
         'jest/valid-expect': 'error',
 
         // eslint jsdoc
@@ -382,6 +397,7 @@ module.exports = {
         'jsdoc/require-example': 'error',
         'jsdoc/require-returns-description': 'error',
         'jsdoc/require-returns-type': 'error',
+        'jsdoc/require-param-name': 'error',
 
         // eslint prettier
         'prettier/prettier': [
@@ -395,6 +411,14 @@ module.exports = {
                 bracketSpacing: false,
                 jsxBracketSameLine: false,
                 semi: false,
+            },
+        ],
+
+        // eslint sort-imports-es6-autofix
+        'sort-imports-es6-autofix/sort-imports-es6': [
+            'error',
+            {
+                ignoreCase: true,
             },
         ],
     },

@@ -10,11 +10,14 @@ module.exports = {
         'no-extra-parens': 'off',
 
         // React
+        'react/button-has-type': 'off',
         'react/display-name': 'error',
+        'react/destructuring-assignment': 'off',
         'react/forbid-component-props': 'off',
         'react/forbid-elements': 'off',
         'react/forbid-foreign-prop-types': 'error',
         'react/forbid-prop-types': 'error',
+        'react/no-access-state-in-setstate': 'error',
         'react/no-children-prop': 'error',
         'react/no-danger-with-children': 'error',
         'react/no-danger': 'error',
@@ -62,6 +65,7 @@ module.exports = {
         'react/jsx-no-literals': 'off',
         'react/jsx-no-target-blank': 'error',
         'react/jsx-no-undef': 'error',
+        'react/jsx-one-expression-per-line': 'off',
         'react/jsx-pascal-case': 'error',
         'react/jsx-sort-props': [
             'error',
