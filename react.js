@@ -74,7 +74,7 @@ module.exports = {
                 reservedFirst: true,
                 shorthandFirst: false,
                 shorthandLast: false,
-                ignoreCase: false,
+                ignoreCase: true,
             },
         ],
         'react/jsx-uses-react': 'error',
