@@ -1,7 +1,7 @@
 {
   "name": "@rnfdigital/eslint-config",
   "description": "RNF Digital ESLint configuration",
-  "version": "2.4.1",
+  "version": "2.5.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RNFDigital/eslint-config.git"
@@ -37,13 +37,11 @@
     "eslint-plugin-jest": "^21.5.0",
     "eslint-plugin-jsdoc": "^3.3.0",
     "eslint-plugin-moment-utc": "^1.0.0",
-    "eslint-plugin-prettier": "^2.4.0",
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-react": "^7.5.1",
     "eslint-plugin-react-native": "^3.2.0",
     "eslint-plugin-sort-imports-es6-autofix": "^0.1.1",
     "moment": "^2.19.1",
-    "prettier": "^1.9.2",
     "react": "^16.0.0"
   },
   "peerDependencies": {
@@ -57,11 +55,14 @@
     "eslint-plugin-jest": ">=21.5.0",
     "eslint-plugin-jsdoc": ">=3.3.0",
     "eslint-plugin-moment-utc": ">=1.0.0",
-    "eslint-plugin-prettier": ">=2.4.0",
     "eslint-plugin-promise": ">=3.6.0",
     "eslint-plugin-react": ">=7.5.1",
     "eslint-plugin-react-native": ">=3.2.0",
-    "eslint-plugin-sort-imports-es6-autofix": ">=0.1.1",
-    "prettier": ">=1.9.2"
+    "eslint-plugin-sort-imports-es6-autofix": ">=0.1.1"
+  },
+  "renovate": {
+    "extends": [
+      "config:base"
+    ]
   }
 }

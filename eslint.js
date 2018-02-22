@@ -49,7 +49,6 @@ module.exports = {
         'moment-utc',
         'jest',
         'jsdoc',
-        'prettier',
         'sort-imports-es6-autofix',
     ],
     settings: {
@@ -256,7 +255,11 @@ module.exports = {
             {blankLine: 'always', prev: 'directive', next: '*'},
             {blankLine: 'never', prev: 'directive', next: 'directive'},
             {blankLine: 'always', prev: ['const', 'let', 'var'], next: '*'},
-            {blankLine: 'any', prev: ['const', 'let', 'var'], next: ['const', 'let', 'var']},
+            {
+                blankLine: 'any',
+                prev: ['const', 'let', 'var'],
+                next: ['const', 'let', 'var'],
+            },
         ],
         'require-jsdoc': 'off',
         'sort-keys': 'off',
@@ -398,21 +401,6 @@ module.exports = {
         'jsdoc/require-returns-description': 'error',
         'jsdoc/require-returns-type': 'error',
         'jsdoc/require-param-name': 'error',
-
-        // eslint prettier
-        'prettier/prettier': [
-            'error',
-            {
-                useTabs: false,
-                printWidth: 120,
-                tabWidth: 4,
-                singleQuote: true,
-                trailingComma: 'es5',
-                bracketSpacing: false,
-                jsxBracketSameLine: false,
-                semi: false,
-            },
-        ],
 
         // eslint sort-imports-es6-autofix
         'sort-imports-es6-autofix/sort-imports-es6': [
