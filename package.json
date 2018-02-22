@@ -6,7 +6,9 @@
     "type": "git",
     "url": "git+https://github.com/RNFDigital/eslint-config.git"
   },
-  "keywords": ["eslint"],
+  "keywords": [
+    "eslint"
+  ],
   "author": "",
   "license": "MIT",
   "bugs": {
@@ -14,7 +16,13 @@
   },
   "homepage": "https://github.com/RNFDigital/eslint-config#readme",
   "main": "eslint.js",
-  "files": ["eslint.js", "node.js", "react-dom.js", "react-native.js", "react.js"],
+  "files": [
+    "eslint.js",
+    "node.js",
+    "react-dom.js",
+    "react-native.js",
+    "react.js"
+  ],
   "scripts": {
     "test": "eslint --cache --ignore-pattern '!.eslintrc.js' ."
   },
