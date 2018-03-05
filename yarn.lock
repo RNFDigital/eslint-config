@@ -495,9 +495,9 @@ eslint-plugin-babel@4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/eslint-plugin-babel/-/eslint-plugin-babel-4.1.2.tgz#79202a0e35757dd92780919b2336f1fa2fe53c1e"
 
-eslint-plugin-eslint-comments@2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-eslint-comments/-/eslint-plugin-eslint-comments-2.0.1.tgz#2cddd5507f1f93b6738b5295f1730f4c2712f2a3"
+eslint-plugin-eslint-comments@2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-eslint-comments/-/eslint-plugin-eslint-comments-2.0.2.tgz#006e1c834beffe6ff3014e84a3ae69acfa539a28"
   dependencies:
     escape-string-regexp "^1.0.5"
     ignore "^3.3.7"
