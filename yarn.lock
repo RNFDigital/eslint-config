@@ -527,9 +527,9 @@ eslint-plugin-jest@21.5.0:
   version "21.5.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-21.5.0.tgz#c7a3bd2ee9d1c832b4e31dec89f6ad93e08d4853"
 
-eslint-plugin-jsdoc@3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jsdoc/-/eslint-plugin-jsdoc-3.3.0.tgz#fc28597d2d1754bd0fea5c201f0092418191a09c"
+eslint-plugin-jsdoc@3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jsdoc/-/eslint-plugin-jsdoc-3.5.0.tgz#cb1bbb941c499fac16c699a5856a332b517897de"
   dependencies:
     comment-parser "^0.4.2"
     lodash "^4.17.4"
