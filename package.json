@@ -63,6 +63,7 @@
   "renovate": {
     "extends": [
       "config:base"
-    ]
+    ],
+    "prConcurrentLimit": 2
   }
 }
